@@ -1,5 +1,4 @@
 import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
-import { SwiperComponent } from "swiper/angular";
 
 // import Swiper core and required modules
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
@@ -12,6 +11,7 @@ SwiperCore.use([EffectCoverflow, Pagination]);
   templateUrl: './carousel-projects.component.html',
   styleUrls: ['./carousel-projects.component.scss']
 })
+
 export class CarouselProjectsComponent {
 
 }

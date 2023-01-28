@@ -1,8 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "swiper/scss";
-@import "swiper/scss/effect-coverflow";
-@import "swiper/scss/pagination";
-
+@import "styles/clip-gray.scss";
 @import "styles/font-size.scss";
 
 *{
@@ -15,7 +12,7 @@
 
 :root{
     --bg-primary: #131313;
-    --bg-secondary: #006eff80;
+    --bg-secondary: #0F468E;
     --bg-navbar: rgba(192, 192, 192, 0.01);
     --white: #FFFFFF;
     --blue: #0270FF;
