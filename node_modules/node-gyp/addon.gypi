@@ -103,41 +103,22 @@
           '-Wl,-bimport:<(node_exp_file)'
         ],
       }],
-      [ 'OS=="os400"', {
-        'ldflags': [
-          '-Wl,-bimport:<(node_exp_file)'
-        ],
-      }],
       [ 'OS=="zos"', {
-        'conditions': [
-          [ '"<!(echo $CC)" != "clang" and \
-             "<!(echo $CC)" != "ibm-clang64" and \
-             "<!(echo $CC)" != "ibm-clang"', {
-            'cflags': [
-              '-q64',
-              '-Wc,DLL',
-              '-qlonglong',
-              '-qenum=int',
-              '-qxclang=-fexec-charset=ISO8859-1'
-            ],
-            'ldflags': [
-              '-q64',
-              '<(node_exp_file)',
-            ],
-          }, {
-            'cflags': [
-              '-m64',
-            ],
-            'ldflags': [
-              '-m64',
-              '<(node_exp_file)',
-            ],
-          }],
+        'cflags': [
+          '-q64',
+          '-Wc,DLL',
+          '-qlonglong',
+          '-qenum=int',
+          '-qxclang=-fexec-charset=ISO8859-1'
         ],
         'defines': [
-          '_ALL_SOURCE',
+          '_ALL_SOURCE=1',
           'MAP_FAILED=-1',
-          '_UNIX03_SOURCE',
+          '_UNIX03_SOURCE=1'
+        ],
+        'ldflags': [
+          '-q64',
+          '<(node_exp_file)'
         ],
       }],
       [ 'OS=="win"', {
