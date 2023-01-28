@@ -1,32 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { DragDropModule } from '@angular/cdk/drag-drop';
+import { SwiperModule } from 'swiper/angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { TrelloComponent } from './pages/trello/trello.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
-import { UsersComponent } from './pages/users/users.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { CarouselProjectsComponent } from './components/carousel-projects/carousel-projects.component';
+import { NavbarComponent } from './pages/navbar/navbar.component';
+import { PresentationComponent } from './components/presentation/presentation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TrelloComponent,
+    CarouselProjectsComponent,
     NavbarComponent,
-    ProjectsComponent,
-    UsersComponent
+    PresentationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    DragDropModule,
-    MDBBootstrapModule.forRoot()
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

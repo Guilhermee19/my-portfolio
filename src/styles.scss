@@ -1,28 +1,31 @@
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import '~bootstrap/dist/css/bootstrap.min.css';
-
-@import '~@angular/material/theming';
-@include mat-core();
-
-$my-portfolio-primary: mat-palette($mat-indigo);
-$my-portfolio-accent: mat-palette($mat-pink, A200, A100, A400);
-
-$my-portfolio-warn: mat-palette($mat-red);
-
-$my-portfolio-theme: mat-light-theme((
-  color: (
-    primary: $my-portfolio-primary,
-    accent: $my-portfolio-accent,
-    warn: $my-portfolio-warn,
-  )
-));
-
-@include angular-material-theme($my-portfolio-theme);
-
 /* You can add global styles to this file, and also import other style files */
-html, body{
-    padding: 0;
+@import "swiper/scss";
+@import "swiper/scss/effect-coverflow";
+@import "swiper/scss/pagination";
+
+@import "styles/font-size.scss";
+
+*{
     margin: 0;
+    padding: 0;
+    outline: none !important;
+    font-family: 'Chakra Petch';
+    box-sizing: border-box;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root{
+    --bg-primary: #131313;
+    --bg-secondary: #006eff80;
+    --bg-navbar: rgba(192, 192, 192, 0.01);
+    --white: #FFFFFF;
+    --blue: #0270FF;
+    --gray: #D9D9D9;
+
+    --gray-primary: #1A1A1A;
+    --gray-secondary: #282828;
+}
+
+html{
+    background: var(--bg-primary);
+    
+}

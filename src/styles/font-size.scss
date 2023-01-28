@@ -1,0 +1,69 @@
+.f-16 {
+    font-size: calc(0.2232142857142857vw + 12.285714285714286px);
+
+    @media (min-width: 768px) {
+      font-size: calc(0.16891891891891891vw + 12.702702702702704px);
+    }
+    @media (min-width: 1360px) {
+      font-size: calc(0.17857142857142858vw + 12.571428571428571px);
+    }
+    @media (min-width: 1920px) {
+      font-size: 16px;
+    }
+}
+
+.f-20 {
+  font-size: calc(0.4464285714285714vw + 12.571428571428571px);
+
+  @media (min-width: 768px) {
+    font-size: calc(0.33783783783783783vw + 13.405405405405405px);
+  }
+  @media (min-width: 1360px) {
+    font-size: calc(0.35714285714285715vw + 13.142857142857142px);
+  }
+  @media (min-width: 1920px) {
+    font-size: 20px;
+  }
+}
+
+.f-32 {
+  font-size: calc(0.8928571428571428vw + 15.142857142857142px);
+
+  @media (min-width: 768px) {
+    font-size: calc(1.0135135135135136vw + 14.216216216216216px);
+  }
+  @media (min-width: 1360px) {
+    font-size: calc(0.7142857142857143vw + 18.285714285714285px);
+  }
+  @media (min-width: 1920px) {
+    font-size: 32px;
+  }
+}
+
+.f-40 {
+  font-size: calc(1.1160714285714286vw + 21.428571428571427px);
+
+  @media (min-width: 768px) {
+    font-size: calc(0.8445945945945946vw + 23.513513513513512px);
+  }
+  @media (min-width: 1360px) {
+    font-size: calc(0.8928571428571428vw + 22.857142857142858px);
+  }
+  @media (min-width: 1920px) {
+    font-size: 40px;
+  }
+}
+
+.f-48 {
+  font-size: calc(1.3392857142857142vw + 21.714285714285715px);
+
+  @media (min-width: 768px) {
+    font-size: calc(1.3513513513513513vw + 21.62162162162162px);
+  }
+  @media (min-width: 1360px) {
+    font-size: calc(1.4285714285714286vw + 20.571428571428573px);
+  }
+  @media (min-width: 1920px) {
+    font-size: 48px;
+  }
+}
