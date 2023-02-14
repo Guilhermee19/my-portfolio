@@ -1,5 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
-import VanillaTilt from "vanilla-tilt";
+// import VanillaTilt from "vanilla-tilt";
 
 @Component({
   selector: 'app-home',

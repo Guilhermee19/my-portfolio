@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CarouselProjectsComponent } from './components/carousel-projects/carousel-projects.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PresentationComponent } from './components/presentation/presentation.co
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SwiperModule
+    SwiperModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
