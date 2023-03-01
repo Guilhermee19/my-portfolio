@@ -13,65 +13,18 @@
   [pagination]="true"
   class="mySwiper"
 >
-  <ng-template swiperSlide>
+  <ng-template swiperSlide *ngFor="let project of listProjects">
     <div class="card_image">
-      <img alt="" src="https://swiperjs.com/demos/images/nature-1.jpg" />
+      <img alt="" [src]="project.image" />
     </div>
-    <span class="shadow"></span>
-  </ng-template>
-
-  <ng-template swiperSlide>
-    <div class="card_image">
-      <img alt="" src="https://swiperjs.com/demos/images/nature-2.jpg" />
-    </div>
-    <span class="shadow"></span>
-  </ng-template>
-
-  <ng-template swiperSlide>
-    <div class="card_image">
-      <img alt="" src="https://swiperjs.com/demos/images/nature-3.jpg" />
-    </div>
-    <span class="shadow"></span>
-  </ng-template>
-
-  <ng-template swiperSlide class="gived">
-    <div class="card_image">
-      <img alt="" src="https://swiperjs.com/demos/images/nature-4.jpg" />
-    </div>
-    <span class="shadow"></span>
-  </ng-template>
-
-  <ng-template swiperSlide>
-    <div class="card_image">
-      <img alt="" src="https://swiperjs.com/demos/images/nature-5.jpg" />
-    </div>
-    <span class="shadow"></span>
-  </ng-template>
-
-  <ng-template swiperSlide>
-    <div class="card_image">
-      <img alt="" src="https://swiperjs.com/demos/images/nature-6.jpg" />
-    </div>
-    <span class="shadow"></span>
-  </ng-template>
-
-  <ng-template swiperSlide>
-    <div class="card_image">
-      <img alt="" src="https://swiperjs.com/demos/images/nature-7.jpg" />
-    </div>
-    <span class="shadow"></span>
-  </ng-template>
-
-  <ng-template swiperSlide>
-    <div class="card_image">
-      <img alt="" src="https://swiperjs.com/demos/images/nature-8.jpg" />
-    </div>
-    <span class="shadow"></span>
-  </ng-template>
-
-  <ng-template swiperSlide>
-    <div class="card_image">
-      <img alt="" src="https://swiperjs.com/demos/images/nature-9.jpg" />
+    <div class="detail">
+      <div class="text">
+        <h2>{{ project.name }}</h2>
+        <p>{{ project.technology }}</p>
+      </div>
+      <div class="link">
+        <a [href]="project.link" target="_blank">{{ project.hosted }}</a>
+      </div>
     </div>
     <span class="shadow"></span>
   </ng-template>

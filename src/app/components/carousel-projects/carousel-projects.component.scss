@@ -2,38 +2,42 @@
 @import "~swiper/css/effect-coverflow";
 .swiper {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 70px;
   padding-bottom: 100px;
   transform: scale(0);
   opacity: 0;
   animation: show 0.5s ease forwards;
   .swiper-slide {
     width: 300px;
-    height: 305px;
+    aspect-ratio: 20/12;
     background-position: center;
     background-size: cover;
     transition: all 0.5s ease;
+
     @media screen and (min-width: 640px) {
       width: 400px;
-      height: 405px;
     }
-    // @media screen and (min-width: 1400px) {
-    //   width: 500px;
-    //   height: 505px;
-    // }
+    @media screen and (min-width: 1400px) {
+      width: 500px;
+    }
     .card_image {
-      background-color: #d5974a;
+      // background-color: #d5974a;
       box-shadow: 0px 0px 10px #00000061;
       display: block;
       width: 100%;
-      padding: 15px;
+      height: 100%;
+      // padding: 15px;
       transition: all 0.5s ease;
-
+      
       img {
-        opacity: 0.8;
+        opacity: 1;
         width: 100%;
+        height: 100%;
+        object-fit: cover;
         border-radius: 5px;
         transition: all 0.5s ease;
+        border: 5px solid black;
+        border-bottom: 20px solid black;
       }
     }
     &.gived {
@@ -42,13 +46,61 @@
       }
     }
     
+    .detail {
+      display: flex;
+      justify-content: space-between;
+      height: 0%;
+      opacity: 0;
+      overflow: hidden;
+      transition: var(--ts);
+      .text {
+        * {
+          box-sizing: border-box;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          overflow: hidden;
+        }
+        h2 {
+          font-size: 17px;
+        }
+        p {
+          font-size: 13px;
+          color: var(--white);
+        }
+      }
+      .link {
+        flex: none;
+        a {
+          font-size: 15px;
+          color: var(--white);
+          text-decoration: none;
+          transition: all .2s;
+        }
+      }
+      @media screen and (min-width: 640px) {
+        .text {
+          h2 {
+            color: var(--white);
+            font-size: 20px;
+          }
+        }
+        .link {
+          a {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
     &.swiper-slide-active {
       .card_image {
-        padding: 10px;
+        padding: 0px;
       }
       .detail {
         opacity: 1;
         height: 40px;
+        margin-top: 10px;
       }
     }
 
@@ -56,9 +108,9 @@
       display: block;
       width: 100%;
       height: 10px;
-      background-color: #00000061;
+      background-color: #000000c6;
       position: absolute;
-      bottom: -70px;
+      bottom: -80px;
       border-radius: 50%;
       z-index: 10;
       filter: blur(10px);
