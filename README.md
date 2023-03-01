@@ -5,7 +5,7 @@ Projeto gerado com [Angular CLI](https://github.com/angular/angular-cli) versão
 
 ## Site na Vercel
 
-[https://my-resume-web.vercel.app/](https://my-resume-web.vercel.app/)
+[https://guisantana.netlify.app//](https://guisantana.netlify.app//)
 
 ## Libs instaladas
 - [Angular Material](https://material.angular.io/guide/getting-started)
