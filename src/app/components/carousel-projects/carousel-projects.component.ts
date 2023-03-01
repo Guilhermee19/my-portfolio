@@ -1,17 +1,20 @@
-import { Component, ViewEncapsulation, ViewChild } from "@angular/core";
+import { Component, OnInit, ViewEncapsulation, ViewChild } from "@angular/core";
+import { SwiperComponent } from "swiper/angular";
 
-// import Swiper core and required modules
-import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
+import SwiperCore, { EffectCoverflow } from "swiper";
 
-// install Swiper modules
-SwiperCore.use([EffectCoverflow, Pagination]);
+SwiperCore.use([EffectCoverflow]);
 
 @Component({
   selector: 'app-carousel-projects',
   templateUrl: './carousel-projects.component.html',
-  styleUrls: ['./carousel-projects.component.scss']
+  styleUrls: ['./carousel-projects.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 
-export class CarouselProjectsComponent {
+export class CarouselProjectsComponent implements OnInit{
+  constructor() { }
 
+  ngOnInit(): void {
+  }
 }
