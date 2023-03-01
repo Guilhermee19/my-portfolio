@@ -5,9 +5,7 @@ Projeto gerado com [Angular CLI](https://github.com/angular/angular-cli) versão
 
 ## Site na Vercel
 
-```bash
 [https://my-resume-web.vercel.app/](https://my-resume-web.vercel.app/)
-```
 
 ## Libs instaladas
 - [Angular Material](https://material.angular.io/guide/getting-started)
