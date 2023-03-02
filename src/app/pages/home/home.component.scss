@@ -1,32 +1,108 @@
-main{
-    width: 100%;
+main {
+  width: 100%;
 
-    section{
-        position: relative;
+  section {
+    position: relative;
 
-        &.projects{
-            width: 100%;
-            height: 90vh;
-            background-image: url('../../../assets/imagens/Walpaper room night.gif');
-            background-position: bottom;
-            background-size: cover;
-            background-repeat: no-repeat;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            h1{
-                font-size: 2.5rem;
-                text-align: center;
-                color: var(--white);
-            }
-        }
-
-        .clip_path{
-            width: 100%;
-            height: 100px;
-        }
-
+    h1 {
+      font-size: 2.2rem;
+      text-align: center;
+      color: var(--white);
     }
+
+    &.projects {
+      width: 100%;
+      height: 90vh;
+      background-image: url("../../../assets/imagens/Walpaper room night.gif");
+      background-position: bottom;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .clip_path {
+      width: 100%;
+      height: 100px;
+    }
+
+    &.skills {
+      width: 100%;
+      height: 90vh;
+      background-color: var(--bg-secondary);
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .left {
+        width: 50%;
+        padding: 0 30px;
+
+        .row {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 10px;
+
+          &:nth-child(even) {
+            margin-left: 55px;
+          }
+
+          .hexagon {
+            width: 100px;
+            height: 50px;
+            background-color: #D9D9D9;
+            position: relative;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+              position: relative;
+              width: 70%;
+              object-fit: contain;
+              z-index: 20;
+            }
+
+            &:before,
+            &:after {
+              content: "";
+              position: absolute;
+              width: 0;
+              border-left: 50px solid transparent;
+              border-right: 50px solid transparent;
+            }
+
+            &:before {
+              bottom: 100%;
+              border-bottom: 35px solid #D9D9D9;
+            }
+
+            &:after {
+              top: 100%;
+              left: 0;
+              width: 0;
+              border-top: 35px solid #D9D9D9;
+            }
+          }
+        }
+      }
+
+      .right_select{
+        width: 50%;
+        padding: 0 30px;
+      }
+    }
+
+    &.abount{
+      width: 100%;
+      height: 50vh;
+      background-color: var(--bg-primary);
+    }
+  }
 }
