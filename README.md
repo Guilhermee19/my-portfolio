@@ -9,8 +9,8 @@ Projeto gerado com [Angular CLI](https://github.com/angular/angular-cli) versão
 
 ## Libs instaladas
 - [Angular Material](https://material.angular.io/guide/getting-started)
-  - `ng add @angular/material`
+  `ng add @angular/material`
 - [Swiper Angular](https://v8.swiperjs.com/angular#usage)
-  - `npm i swiper`
+  `npm i swiper`
 - [Vanilla Tilt](https://www.npmjs.com/package/vanilla-tilt)
-  - `npm i vanilla-tilt`
+  `npm i vanilla-tilt`
