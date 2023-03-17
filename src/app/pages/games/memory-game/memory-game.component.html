@@ -1,0 +1,10 @@
+<main>
+  <section>
+    <div class="card" *ngFor="let card of matrix; let idx = index"
+      (click)="selectCard(idx)" [ngClass]="{'select': createLineVictory(idx)}">
+      <!-- {{ card }} -->
+      <i icon="icon_X" *ngIf="card == 'X'" class="icon_color"></i>
+      <i icon="icon_0" *ngIf="card == '0'" class="icon_color"></i>
+    </div>
+  </section>
+</main>

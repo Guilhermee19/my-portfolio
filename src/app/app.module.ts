@@ -8,14 +8,20 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
 import { SwiperModule } from 'swiper/angular';
 import { CarouselProjectsComponent } from './components/carousel-projects/carousel-projects.component';
+import { GamesComponent } from './pages/games/games.component';
+import { MemoryGameComponent } from './pages/games/memory-game/memory-game.component';
+import { IconDirective } from './directives/icon.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    IconDirective,
     NavbarComponent,
     PresentationComponent,
-    CarouselProjectsComponent
+    CarouselProjectsComponent,
+    GamesComponent,
+    MemoryGameComponent,
   ],
   imports: [
     BrowserModule,
