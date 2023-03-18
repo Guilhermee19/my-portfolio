@@ -2,9 +2,9 @@
     <strong class="f-16" routerLink="/" style="cursor: pointer;"> <span>< Iam</span>Gui.dev /> </strong>
 
     <nav>
-        <!-- <a href="#" class="f-16"> Projetos </a>
-        <a href="#" class="f-16"> Habilidades </a>
-        <a href="#" class="f-16"> Sobre </a> -->
+        <!-- <a href="#" class="f-16"> Projetos </a> -->
+        <!-- <a href="#" class="f-16"> Habilidades </a> -->
+        <!-- <a href="#" class="f-16"> Sobre </a> -->
         <a class="f-16" [matMenuTriggerFor]="menu"> {{ selected_country.language }} </a>
         <mat-menu #menu="matMenu">
           <button mat-menu-item *ngFor="let country of countries" (click)="changeLanguage(country)">
@@ -14,4 +14,4 @@
     </nav>
 </section>
 
-<!-- <router-outlet></router-outlet> -->
+<router-outlet></router-outlet>

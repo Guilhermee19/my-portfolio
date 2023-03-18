@@ -8,6 +8,9 @@ main{
   section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    background-color: #251755;
+    padding: 10px;
+    border-radius: 10px;
     grid-gap: 8px;
 
     .card{
@@ -16,8 +19,9 @@ main{
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(0, 98, 128, 0.4);
+      background-color: #2b1774;
       transition: all .2s;
+      border-radius: 3px;
       cursor: pointer;
 
       font-size: 5rem;
@@ -29,12 +33,12 @@ main{
 
       &:hover{
         transform: scale(1.03);
-        background-color: rgba(0, 98, 128, 0.6);
+        background-color: #321d81;
         border-radius: 10px;
       }
 
       &.select{
-        background-color: white !important;
+        background-color: #4b2eb2 !important;
         font-size: 6rem;
 
         .icon_color{

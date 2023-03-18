@@ -1,7 +1,11 @@
 {
-  "projects": "Projects",
+  "about_me": "About me",
+  "projects": "Projects developed",
   "terminal":{
     "hello_i_am_is": "Hello, my name is",
+    "i_am":"I'm a",
     "front_end_developer": "Front-end Developer"
-  }
+  },
+  "text_about_me_1":"With almost three years of experience in Angular, I am a front-end developer specialized in creating responsive and attractive websites with fun animations. My knowledge of Scss and best practices ensures the efficiency and easy maintenance of the projects I develop.",
+  "text_about_me_2":"I am committed to continuous learning and growth in the software development market. Currently, I am expanding my back-end skills with Django and Python and striving to become a full-stack developer to offer more complete and efficient solutions."
 }

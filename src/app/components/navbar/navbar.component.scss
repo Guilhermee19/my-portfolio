@@ -1,12 +1,16 @@
 section{
+  position: fixed;
     width: 100%;
-    height: 70px;
+    height: 50px;
     padding: 0 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background: var(--bg-navbar);
+    z-index: 900;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px -10px #020c1bb3;
 
     strong{
         color: var(--white);

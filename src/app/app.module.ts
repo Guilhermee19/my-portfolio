@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
@@ -7,12 +7,11 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
 }
 
-import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { PresentationComponent } from './components/presentation/presentation.component';
 import { SwiperModule } from 'swiper/angular';
 import { CarouselProjectsComponent } from './components/carousel-projects/carousel-projects.component';
 import { GamesComponent } from './pages/games/games.component';
@@ -20,6 +19,12 @@ import { MemoryGameComponent } from './pages/games/memory-game/memory-game.compo
 import { IconDirective } from './directives/icon.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { NgxMaskModule } from 'ngx-mask';
+import { VerticalScrollComponent } from './components/vertical-scroll/vertical-scroll.component';
+import { TerminalComponent } from './components/terminal/terminal.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +32,11 @@ import { MatMenuModule } from '@angular/material/menu';
     HomeComponent,
     IconDirective,
     NavbarComponent,
-    PresentationComponent,
     CarouselProjectsComponent,
     GamesComponent,
     MemoryGameComponent,
+    VerticalScrollComponent,
+    TerminalComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,16 +44,21 @@ import { MatMenuModule } from '@angular/material/menu';
     AppRoutingModule,
     SwiperModule,
     MatMenuModule,
+    BrowserAnimationsModule,
+    DragDropModule,
+    MatInputModule,
+    FormsModule,
+    NgxMaskModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
-          provide: TranslateLoader,
-          useFactory: HttpLoaderFactory,
-          deps: [HttpClient]
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
       }
     }),
-    BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

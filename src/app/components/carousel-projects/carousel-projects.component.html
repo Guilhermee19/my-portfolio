@@ -10,7 +10,8 @@
     modifier: 1,
     slideShadows: true
   }"
-  [pagination]="true"
+  [loop]="true"
+  [pagination]="{ clickable: true }"
   class="mySwiper"
 >
   <ng-template swiperSlide *ngFor="let project of listProjects">

@@ -1,9 +1,9 @@
 import { Component, OnInit, ViewEncapsulation, ViewChild } from "@angular/core";
 import { SwiperComponent } from "swiper/angular";
 
-import SwiperCore, { EffectCoverflow } from "swiper";
+import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 
-SwiperCore.use([EffectCoverflow]);
+SwiperCore.use([EffectCoverflow, Pagination]);
 
 @Component({
   selector: 'app-carousel-projects',
