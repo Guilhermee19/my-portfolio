@@ -12,7 +12,7 @@ export class TerminalComponent implements OnInit {
   }
 
   code: string = '';
-  open: boolean = false;
+  open: boolean = true;
 
   ngOnInit(): void {
   }

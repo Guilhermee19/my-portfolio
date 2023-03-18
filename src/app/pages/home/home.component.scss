@@ -48,6 +48,10 @@ main {
       text-indent: 1.5em;
       color: var(--white);
 
+      @media screen and (max-width: 500px){
+        font-size: 1.7rem;
+      }
+
       strong{
         font-size: 1.5rem;
         color: var(--blue);

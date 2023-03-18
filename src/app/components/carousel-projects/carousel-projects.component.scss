@@ -61,6 +61,7 @@
           overflow: hidden;
         }
         h2 {
+          color: var(--white);
           font-size: 17px;
         }
         p {
@@ -80,7 +81,6 @@
       @media screen and (min-width: 640px) {
         .text {
           h2 {
-            color: var(--white);
             font-size: 20px;
           }
         }

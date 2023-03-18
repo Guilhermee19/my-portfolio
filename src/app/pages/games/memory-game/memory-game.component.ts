@@ -16,6 +16,8 @@ export class MemoryGameComponent implements OnInit {
   isVictory = '';
   modeOfVictory: number[] = [] as number[];
 
+  text_game: string = '';
+
   ngOnInit(): void {
   }
 
@@ -30,13 +32,13 @@ export class MemoryGameComponent implements OnInit {
     if(this.isVictory || this.rounds <= 0){
         setTimeout(() => {
           if(this.isVictory) {
-            alert('Ganhador -> '+this.isVictory);
+            this.text_game = 'O '+this.isVictory+' Ganhoou!' ;
             console.log(this.modeOfVictory)
           }
-          if(this.rounds <= 0){
-            alert('Empate!')
+          else if(this.rounds <= 0){
+            this.text_game = 'Empate!';
           }
-          this.reset();
+          // this.reset();
         }, 1 * 1000);
     }
   }
@@ -79,6 +81,7 @@ export class MemoryGameComponent implements OnInit {
     this.player = false;
     this.isVictory = '';
     this.modeOfVictory = [] as number[];
+    this.text_game = '';
   }
 
 }
