@@ -34,3 +34,20 @@ html{
   overflow: visible;
   vertical-align: -0.125em;
 }
+
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--shadow);
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gray-primary);
+  border-radius: 7px;
+}

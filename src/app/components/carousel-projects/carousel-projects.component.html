@@ -21,10 +21,13 @@
     <div class="detail">
       <div class="text">
         <h2>{{ project.name }}</h2>
-        <p>{{ project.technology }}</p>
+        <p>{{ project.technology }} - {{ project.hosted }}</p>
       </div>
       <div class="link">
-        <a [href]="project.link" target="_blank">{{ project.hosted }}</a>
+        <a [href]="project.link" target="_blank">  {{ "access" | translate }} </a>
+        <a [href]="project.link_project" target="_blank">
+          <i icon="icon_github" class="icon_color"></i>
+        </a>
       </div>
     </div>
     <span class="shadow"></span>

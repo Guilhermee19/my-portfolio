@@ -190,4 +190,15 @@ main {
       background-color: var(--bg-primary);
     }
   }
+
+  footer{
+    background-color: var(--gray-primary);
+    z-index: 50;
+    padding: 15px;
+
+    p{
+      color: var(--white);
+      text-align: center;
+    }
+  }
 }

@@ -1,0 +1,276 @@
+section{
+  #img_background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.2;
+    filter: blur(1px);
+  }
+
+  .gameboy{
+    position: relative;
+    width: 95%;
+    aspect-ratio: 6/10;
+    max-width: 420px;
+    border-radius: 10px 10px 55px 10px;
+    background: #eee;
+    margin: 5vh auto;
+    overflow: visible;
+    box-shadow: 5px 8px 10px rgba(0,0,0,0.7);
+    z-index:2;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      aspect-ratio: 10/0.7;
+      // height: 31px;
+      border-bottom: 4px solid #e0e0e0;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 78%;
+      aspect-ratio: 10/1;
+      // height: 31px;
+      border-left: 4px solid #e0e0e0;
+      border-right: 4px solid #e0e0e0;
+      margin-left: 10.5%;
+      margin-right: 10.5%;
+    }
+
+    @media screen and (max-width: 560px) {
+      border-radius: 1.5vw 1.5vw 10vw 1.5vw;
+    }
+
+    .screen_border{
+      position: relative;
+      top: 8%;
+      left: 9%;
+      width: 82%;
+      height: 38%;
+      margin-bottom: 28%;
+      background: #848190;
+      border-radius: 5% 5% 19% 5%;
+      box-shadow: inset 0px 0px 0px 3px rgba(0, 0, 0, 0.06);
+      display: grid;
+      place-items: center;
+
+      .screen{
+        position: relative;
+        width: 70%;
+        height: 68%;
+        background: #b0bd58;
+        box-shadow: inset 3px 3px rgba(0,0,0,0.15);
+        display: grid;
+        place-items: center;
+
+        h4{
+          color: #567a00;
+          text-align: center;
+          margin: 0 !important;
+        }
+
+        h5{
+          position: absolute;
+          bottom: 5%;
+          color: #567a00;
+          text-align: center;
+          margin: 0 !important;
+        }
+      }
+    }
+
+    .controls{
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10%;
+
+      .btn_direction{
+        position: relative;
+        display: grid;
+        place-items: center;
+        padding: 18% 17%;
+        background-color: #dfdfdf;
+        border-radius: 50%;
+
+        &:before{
+          position: absolute;
+          content: "";
+          z-index: 1;
+          width: 5vw;
+          max-width: 28px;
+          aspect-ratio: 1/1;
+          background-color: #353535;
+          border-radius: 100%;
+          box-shadow: inset 0.2rem -0.2rem #2d2d2d;
+
+        }
+
+        .vertical{
+          position: absolute;
+          width: 5vw;
+          max-width: 28px;
+          aspect-ratio: 1/3;
+          background: #444;
+          border-radius: 0.3rem;
+
+          .btn{
+            position: absolute;
+            width: 5vw;
+            max-width: 28px;
+            aspect-ratio: 1/1;
+            border-radius: 0.3rem;
+            cursor: pointer;
+
+            &.left{
+              bottom: 0;
+              box-shadow: inset 0.2rem -0.2rem #353535;
+            }
+
+            &.right{
+              top: 0;
+              box-shadow: inset 0.2rem 0 #353535;
+            }
+          }
+        }
+
+        .horizontal{
+          position: absolute;
+          width: 5vw;
+          max-width: 28px;
+          aspect-ratio: 1/3;
+          background: #444;
+          border-radius: 0.3rem;
+          transform: rotate(90deg);
+
+          .btn{
+            position: absolute;
+            width: 5vw;
+            max-width: 28px;
+            aspect-ratio: 1/1;
+            border-radius: 0.3rem;
+            cursor: pointer;
+
+            &.left{
+              bottom: 0;
+            }
+
+            &.right{
+              top: 0;
+            }
+          }
+        }
+      }
+
+      .btn-AB{
+        position: relative;
+        width: 23vw;
+        max-width: 130px;
+        padding: 0.5rem;
+        background: #dfdfdf;
+        border-radius: 30px;
+        transform: rotate(-25deg);
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.75rem;
+
+        .button{
+          width: 8vw;
+          max-width: 45px;
+          aspect-ratio: 1/1;
+          background: #a93671;
+          border-radius: 100%;
+          cursor: pointer;
+          display: flex;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+          box-shadow: inset 0.3rem -0.3rem #8d1c56;
+
+
+          h5{
+            margin-bottom: -85px;
+            font-weight: 800;
+            line-height: 1.2;
+
+            @media screen and (max-width: 560px) {
+              margin-bottom: -15vw;
+            }
+          }
+        }
+
+      }
+
+    }
+
+    .btn-start-select{
+      position: absolute;
+      width: 100%;
+      bottom: 12%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
+      .bar{
+        width: 12vw;
+        max-width: 65px;
+        aspect-ratio: 10/2;
+        background: #999;
+        border-radius: 50px;
+        transform: rotate(-25deg);
+        box-shadow: 0 0 0 0.3rem #dfdfdf;
+        cursor: pointer;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        h5{
+          width: 100%;
+          text-align: center;
+          margin-bottom: -45px;
+          font-weight: 800;
+          line-height: 1.2;
+
+          @media screen and (max-width: 560px) {
+            margin-bottom: -8vw;
+          }
+        }
+      }
+
+    }
+
+    .speakers{
+      content: "";
+      position: absolute;
+      width: max-content;
+      bottom: 4%;
+      right: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 17%;
+      transform: rotate(-25deg);
+
+      .bar_son{
+        height: 13vw;
+        max-height: 70px;
+        aspect-ratio: 1/8;
+        background: #999;
+        border-radius: 4px;
+      }
+    }
+  }
+
+}

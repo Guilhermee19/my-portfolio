@@ -1,0 +1,39 @@
+<section>
+  <img id="img_background" src="../../../assets/imagens/nintendo-switch-gamer.jpg" alt="">
+  <div class="gameboy">
+    <div class="screen_border">
+      <div class="screen">
+        <h4> {{ list_games[index].name }} </h4>
+        <h5> {{ index+1 }} / {{ list_games.length}} </h5>
+      </div>
+    </div>
+    <div class="controls">
+      <div class="btn_direction">
+        <div class="vertical">
+          <div class="btn left"> </div>
+          <div class="btn right"> </div>
+        </div>
+        <div class="horizontal">
+          <div class="btn left" (click)="nextOrBack('back')"> </div>
+          <div class="btn right" (click)="nextOrBack('next')"> </div>
+        </div>
+      </div>
+      <div class="btn-AB">
+        <div class="button"><h5>B</h5></div>
+        <div class="button" (click)="startGame()"><h5>A</h5></div>
+      </div>
+    </div>
+    <div class="btn-start-select">
+      <div class="bar"><h5>SELECT</h5></div>
+      <div class="bar"><h5>START</h5></div>
+    </div>
+    <div class="speakers">
+      <div class="bar_son"></div>
+      <div class="bar_son"></div>
+      <div class="bar_son"></div>
+      <div class="bar_son"></div>
+      <div class="bar_son"></div>
+      <div class="bar_son"></div>
+    </div>
+  </div>
+</section>

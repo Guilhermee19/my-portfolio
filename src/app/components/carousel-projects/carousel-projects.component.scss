@@ -52,6 +52,7 @@
       opacity: 0;
       overflow: hidden;
       transition: var(--ts);
+
       .text {
         * {
           box-sizing: border-box;
@@ -72,10 +73,21 @@
       .link {
         flex: none;
         a {
+          padding: 5px 10px;
           font-size: 15px;
           color: var(--white);
           text-decoration: none;
+          font-weight: 600;
           transition: all .2s;
+
+          &:hover{
+            color: var(--blue);
+          }
+
+          .icon_color{
+            font-size: 20px;
+            // color: var(--white);
+          }
         }
       }
       @media screen and (min-width: 640px) {
@@ -97,10 +109,19 @@
         padding: 0px;
       }
       .detail {
-        width: 90%;
+        width: 100%;
         opacity: 1;
-        height: 45px;
-        margin: 0 auto 0;
+        height: 75px;
+        padding: 20px 5% 0;
+        animation: card_down 1s;
+        cursor: default;
+
+        @keyframes card_down {
+          0%{
+            opacity: 0;
+            transform: translateY(-30px);
+          }
+        }
       }
     }
 

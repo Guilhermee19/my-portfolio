@@ -25,6 +25,8 @@ import { FormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 import { VerticalScrollComponent } from './components/vertical-scroll/vertical-scroll.component';
 import { TerminalComponent } from './components/terminal/terminal.component';
+import { GameBoyComponent } from './components/game-boy/game-boy.component';
+import { TicTacToeComponent } from './pages/games/tic-tac-toe/tic-tac-toe.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { TerminalComponent } from './components/terminal/terminal.component';
     MemoryGameComponent,
     VerticalScrollComponent,
     TerminalComponent,
+    GameBoyComponent,
+    TicTacToeComponent,
   ],
   imports: [
     BrowserModule,

@@ -19,6 +19,8 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  year= new Date().getFullYear();
+
   ngOnInit(): void {
   }
 

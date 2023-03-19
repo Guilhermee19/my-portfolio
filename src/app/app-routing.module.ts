@@ -12,6 +12,7 @@ const routes: Routes = [
     ]
   },
   { path: 'gamer', component: GamesComponent },
+  { path: 'gamer/:name_game', component: GamesComponent },
   { path: '**', redirectTo: '' }
 ];
 

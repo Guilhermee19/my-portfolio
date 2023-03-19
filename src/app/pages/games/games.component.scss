@@ -1,5 +1,6 @@
 main{
   position: relative;
+  padding: 70px 10% 0px;
   .alert{
     position: absolute;
     top: 0;
@@ -9,6 +10,8 @@ main{
   }
 
   header{
-
+    h1{
+      color: var(--white);
+    }
   }
 }
