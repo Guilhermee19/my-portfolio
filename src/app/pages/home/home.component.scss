@@ -81,6 +81,10 @@ main {
         }
       }
 
+      app-terminal{
+        width: 50%;
+      }
+
       @media screen and (max-width: 890px) {
         flex-direction: column;
         justify-content: center;
@@ -88,6 +92,9 @@ main {
         .presentation{
           width: 100%;
           padding: 10%;
+        }
+        app-terminal{
+          width: 90%;
         }
       }
     }

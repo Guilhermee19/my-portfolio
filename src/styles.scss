@@ -11,21 +11,22 @@
 }
 
 :root{
-    --bg-primary: #041328;
-    --bg-secondary: #0F468E;
-    --bg-navbar: rgba(0, 0, 0, 0.1);
-    --white: #deeaff;
-    --blue: #0270FF;
-    --gray: #D9D9D9;
+  --bg-primary: #041328;
+  --bg-secondary: #0F468E;
+  --bg-navbar: rgba(0, 0, 0, 0.1);
+  --white: #deeaff;
+  --blue: #0270FF;
+  --gray: #D9D9D9;
 
-    --gray-primary: #1A1A1A;
-    --gray-secondary: #282828;
+  --gray-primary: #1A1A1A;
+  --gray-secondary: #282828;
 
-    --shadow: rgba(0, 0, 0, 0.3)
+  --shadow: rgba(0, 0, 0, 0.3)
 }
 
 html{
-    background: var(--bg-primary);
+  background: var(--bg-primary);
+  scroll-behavior: smooth !important;
 }
 
 .svg-inline--fa {

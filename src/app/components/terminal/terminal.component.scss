@@ -1,6 +1,11 @@
+app-terminal{
+  width: 50%;
+}
+
 .typewrtite {
-  min-width: 370px;
-  max-width: 480px;
+  // min-width: 90%;
+  // min-width: 370px;
+  // max-width: 480px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,10 +36,10 @@
 .card_terminal {
   position: relative;
   width: 80%;
-  max-width: 430px;
-  height: 250px !important;
-  padding: 0 45px;
-  // margin: 0 auto;
+  max-width: 380px;
+  // min-height: 250px !important;
+  aspect-ratio: 10/6;
+  padding: 0 15px;
   border-radius: 10px;
   background-color: var(--gray-secondary);
   border-top: 25px solid var(--gray-primary);
@@ -169,38 +174,48 @@
   }
 }
 
-.icon{
+nav{
   position: absolute;
+  width: 100%;
   bottom: 10px;
-  left: 10px;
+  left: 0px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  gap: 10px;
 
-  &:hover{
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.1);
-    cursor: pointer;
-  }
-
-  .terminal{
+  .icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 5px;
-    width: 35px;
-    object-fit: contain;
-  }
-  .line{
-    width: 6px;
-    height: 3px;
-    border-radius: 50px;
-    background-color: gray;
 
-    &.icon_open{
-      width: 18px;
-      background-color: var(--blue);
+    &:hover{
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+    }
+
+    .terminal{
+      padding: 5px;
+      width: 35px;
+      object-fit: contain;
+    }
+    .line{
+      width: 6px;
+      height: 3px;
+      border-radius: 50px;
+      background-color: gray;
+
+      &.icon_open{
+        width: 18px;
+        background-color: var(--blue);
+      }
     }
   }
+
 }
