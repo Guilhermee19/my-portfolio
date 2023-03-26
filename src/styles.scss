@@ -36,6 +36,15 @@ html{
   vertical-align: -0.125em;
 }
 
+.cdk-overlay-connected-position-bounding-box{
+  position: fixed !important;
+  top: 50px !important;
+  right: 5px !important;
+  width: max-content !important;
+  height: max-content !important;
+  display: flex;
+  justify-content: flex-end;
+}
 
 /* scrollbar */
 ::-webkit-scrollbar {

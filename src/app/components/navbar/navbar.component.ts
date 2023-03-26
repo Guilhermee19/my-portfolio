@@ -31,10 +31,14 @@ export class NavbarComponent implements OnInit {
 
   countries: any = [
     {
-      language: 'pt-br'
+      language: 'pt-br',
+      title: 'Português',
+      img: '/assets/imagens/flag-pt.png'
     },
     {
-      language: 'en'
+      language: 'en',
+      title: 'Ingles',
+      img: '/assets/imagens/flag-en.png'
     }
   ];
 

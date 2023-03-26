@@ -31,7 +31,37 @@ section{
         a{
             font-weight: bold;
             text-decoration: none;
+            cursor: pointer;
             color: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+              width: 25px;
+              aspect-ratio: 1/1;
+              object-fit: contain;
+            }
         }
     }
+}
+
+::ng-deep .mat-menu-content{
+  .mat-menu-item{
+    height: 35px !important;
+    line-height: 1 !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 10px !important;
+    background: #ffffff21 !important;
+    border-radius: 10px !important;
+    margin: 8px 0 !important;
+
+    img{
+      width: 25px;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+    }
+  }
 }
