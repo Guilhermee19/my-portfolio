@@ -27,6 +27,7 @@ import { VerticalScrollComponent } from './components/vertical-scroll/vertical-s
 import { TerminalComponent } from './components/terminal/terminal.component';
 import { GameBoyComponent } from './components/game-boy/game-boy.component';
 import { TicTacToeComponent } from './pages/games/tic-tac-toe/tic-tac-toe.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { TicTacToeComponent } from './pages/games/tic-tac-toe/tic-tac-toe.compon
     TerminalComponent,
     GameBoyComponent,
     TicTacToeComponent,
+    SkillsComponent,
   ],
   imports: [
     BrowserModule,

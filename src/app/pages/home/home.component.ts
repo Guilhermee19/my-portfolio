@@ -1,5 +1,5 @@
-import { Component, OnInit, HostListener } from '@angular/core';
-
+import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import VanillaTilt from "vanilla-tilt";
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -17,11 +17,15 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  constructor(private el: ElementRef) { }
 
   year= new Date().getFullYear();
 
   ngOnInit(): void {
+     // add vanilla-tilt effect on .<class-name> cards
+     VanillaTilt.init(
+      this.el.nativeElement.querySelectorAll(".effect_move"), { max: 10, speed: 500, scale: 1.05 }
+    );
   }
 
 }
