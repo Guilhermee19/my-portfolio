@@ -20,7 +20,12 @@ export class TerminalComponent implements OnInit {
   checkComand(){
     switch(this.code){
       case 'gamer':
+        this.code = '';
         this.router.navigate(['/gamer'])
+        break;
+        case 'fcs':
+          this.code = '';
+          window.open('https://fcs.iamgui.dev/')
         break;
     }
   }
