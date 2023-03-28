@@ -88,26 +88,41 @@ main {
           img{
             width: 30vw;
             max-width: 480px !important;
+            min-width: 240px !important;
             aspect-ratio: 1/1;
             object-fit: contain;
           }
         }
-      }
 
-      h5{
-        color: var(--white);
+        h5{
+          color: var(--white);
 
-        span{
-          color: var(--blue);
-          padding-left: 45px;
+          span{
+            color: var(--blue);
+            padding-left: 45px;
 
-          &:last-child,
-          &:first-child{
-            padding: 0 !important;
+            &:last-child,
+            &:first-child{
+              padding: 0 !important;
+            }
           }
+
         }
 
+        @media screen and (max-width: 700px) {
+          flex-direction: column;
+          gap: 20px;
+
+          figure{
+            width: max-content;
+
+            img{
+              width: 40vw;
+            }
+          }
+        }
       }
+
     }
 
     &.projects {
