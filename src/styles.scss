@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "styles/variables";
 @import "styles/clip-gray.scss";
 @import "styles/font-size.scss";
 
@@ -8,28 +10,38 @@
     outline: none !important;
     font-family: 'Chakra Petch';
     box-sizing: border-box !important;
-
-    cursor: none !important;
-}
-
-:root{
-  --bg-primary: #041328;
-  --bg-secondary: #0F468E;
-  --bg-navbar: rgba(0, 0, 0, 0.1);
-  --white: #deeaff;
-  --blue: #0270FF;
-  --gray: #D9D9D9;
-
-  --gray-primary: #1A1A1A;
-  --gray-secondary: #282828;
-
-  --shadow: rgba(0, 0, 0, 0.3)
 }
 
 html{
   background: var(--bg-primary);
   scroll-behavior: smooth !important;
 }
+
+section {
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+
+  header{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    h4{
+      color: var(--blue);
+      padding-right: 5px;
+    }
+
+    h3 {
+      width: 100%;
+      text-align: left;
+      color: var(--white);
+    }
+  }
+}
+
 
 .svg-inline--fa {
   display: inline-block;

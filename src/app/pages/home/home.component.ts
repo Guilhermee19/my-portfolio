@@ -28,4 +28,24 @@ export class HomeComponent implements OnInit {
     );
   }
 
+  calcularIdade(dataNascimento: string) {
+    var dataAtual = new Date();
+    var diaAtual = dataAtual.getDate();
+    var mesAtual = dataAtual.getMonth() + 1;
+    var anoAtual = dataAtual.getFullYear();
+
+    var dataNasc = new Date(dataNascimento);
+    var diaNasc = dataNasc.getDate();
+    var mesNasc = dataNasc.getMonth() + 1;
+    var anoNasc = dataNasc.getFullYear();
+
+    var idade = anoAtual - anoNasc;
+
+    if (mesAtual < mesNasc || (mesAtual == mesNasc && diaAtual < diaNasc)) {
+      idade--;
+    }
+
+    return idade;
+  }
+
 }

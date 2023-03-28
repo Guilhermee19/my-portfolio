@@ -61,7 +61,7 @@
           -webkit-line-clamp: 1;
           overflow: hidden;
         }
-        h2 {
+        h5 {
           color: var(--white);
           font-size: 17px;
         }
@@ -92,7 +92,7 @@
       }
       @media screen and (min-width: 640px) {
         .text {
-          h2 {
+          h5 {
             font-size: 20px;
           }
         }

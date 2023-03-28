@@ -8,6 +8,26 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavbarComponent implements OnInit {
 
+  @HostListener('window:scroll', ['$event.target'])
+  scroll(e: any) {
+
+    let navbar = document.getElementById('navbar') as HTMLElement;
+    let scroll = e.scrollingElement.scrollTop;
+
+    if (scroll > this.currentPosition) {
+      navbar.classList.add("scroll_down");
+      navbar.classList.remove("scroll_up");
+
+      this.openMenu = false;
+
+    } else {
+      navbar.classList.add("scroll_up");
+      navbar.classList.remove("scroll_down");
+    }
+
+    this.currentPosition = scroll;
+  }
+
   constructor(
     public translate: TranslateService
   ) {
@@ -28,6 +48,9 @@ export class NavbarComponent implements OnInit {
       translate.use(this.selected_country.language.match(/pt-br|en/) ? this.selected_country.language : 'pt-br');
     }
   }
+
+  currentPosition = window.pageYOffset;
+  openMenu: boolean = false
 
   countries: any = [
     {

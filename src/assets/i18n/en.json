@@ -1,9 +1,9 @@
 {
   "welcome": "Welcome!",
-  "about_me": "About me",
-  "projects": "Projects developed",
+  "about_me": "About_me",
+  "projects": "Projects",
   "terminal":{
-    "hello_i_am_is": "Hello, my name is",
+    "hello_i_am": "Hello, I am",
     "i_am":"I'm a",
     "front_end_developer": "Front-end Developer"
   },
