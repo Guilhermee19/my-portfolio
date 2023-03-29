@@ -12,13 +12,34 @@
 
   <section class="about">
     <header>
-      <h4>02.</h4>
+      <h4>01.</h4>
       <h3> {{ "about_me" | translate }}</h3>
     </header>
 
     <div class="row">
+
+      <!-- <swiper
+        [direction]="'vertical'"
+        [slidesPerView]=1
+        [spaceBetween]=1
+        [mousewheel]=true
+        [pagination]="{ clickable: true }"
+        class="mySwiper"
+      >
+        <ng-template swiperSlide>2015</ng-template>
+        <ng-template swiperSlide>2017</ng-template>
+        <ng-template swiperSlide>2020</ng-template>
+        <ng-template swiperSlide>2022</ng-template>
+      </swiper> -->
+
       <figure>
         <img src="../../../assets/imagens/picture minha.png" alt="my picture">
+        <div class="social">
+          <a href="https://github.com/Guilhermee19" rel="noopener" target="_blank"><span>Github</span></a>
+          <a href="https://codepen.io/Guilhermee19" rel="noopener" target="_blank"><span>CodePen</span></a>
+          <a href="https://www.linkedin.com/in/gui-santana/" rel="noopener" target="_blank"><span>Linkedin</span></a>
+          <a href="mailto:eu@iamgui.dev" rel="noopener" target="_blank"><span>E-mail</span></a>
+        </div>
       </figure>
 
       <h5>
@@ -36,7 +57,7 @@
 
   <section class="projects">
     <header>
-      <h4>03.</h4>
+      <h4>02.</h4>
       <h3> {{ "projects" | translate }}</h3>
     </header>
     <app-carousel-projects></app-carousel-projects>

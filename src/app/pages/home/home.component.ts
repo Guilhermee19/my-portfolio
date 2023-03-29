@@ -1,9 +1,16 @@
-import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
-import VanillaTilt from "vanilla-tilt";
+import { Component, OnInit, HostListener, ElementRef, ViewEncapsulation } from '@angular/core';
+import { SwiperComponent } from "swiper/angular";
+
+import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
+
+SwiperCore.use([EffectCoverflow, Pagination]);
+
+// import VanillaTilt from "vanilla-tilt";
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit {
 
@@ -23,9 +30,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
      // add vanilla-tilt effect on .<class-name> cards
-     VanillaTilt.init(
-      this.el.nativeElement.querySelectorAll(".effect_move"), { max: 10, speed: 500, scale: 1.05 }
-    );
+    //  VanillaTilt.init(
+    //   this.el.nativeElement.querySelectorAll(".effect_move"), { max: 10, speed: 500, scale: 1.05 }
+    // );
   }
 
   calcularIdade(dataNascimento: string) {
