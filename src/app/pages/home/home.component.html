@@ -1,7 +1,5 @@
 <main>
   <section class="start">
-    <!-- <img src="../../../assets/imagens/Cubo Mario.png" alt="Cubo Mario"> -->
-
     <div class="title_name">
       <h2>{{ "terminal.hello_i_am" | translate }}</h2>
       <h1><span>Guilherme</span> Santana</h1>
@@ -18,7 +16,7 @@
 
     <div class="row">
 
-      <!-- <swiper
+      <swiper
         [direction]="'vertical'"
         [slidesPerView]=1
         [spaceBetween]=1
@@ -26,11 +24,11 @@
         [pagination]="{ clickable: true }"
         class="mySwiper"
       >
-        <ng-template swiperSlide>2015</ng-template>
-        <ng-template swiperSlide>2017</ng-template>
-        <ng-template swiperSlide>2020</ng-template>
-        <ng-template swiperSlide>2022</ng-template>
-      </swiper> -->
+        <ng-template swiperSlide *ngFor="let obj of time_line">
+          <h3> {{ obj.year }} </h3>
+          <h5> {{ obj.description }} </h5>
+        </ng-template>
+      </swiper>
 
       <figure>
         <img src="../../../assets/imagens/picture minha.png" alt="my picture">
@@ -64,7 +62,15 @@
   </section>
 
   <!-- <section class="skills">
-    <div class="clip_path right inverse down gray"></div>
+    <header>
+      <h4>03.</h4>
+      <h3> {{ "skills" | translate }}</h3>
+    </header>
+    <section>
+      <div class="universe">
+        <img src="../../../assets/imagens/Logo.png" alt="">
+      </div>
+    </section>
   </section> -->
 
   <footer>

@@ -28,6 +28,25 @@ export class HomeComponent implements OnInit {
 
   year= new Date().getFullYear();
 
+  time_line = [
+    {
+      year: 2014,
+      description: 'O primeira contato com programação foi com HTML e CSS basico, mesmo nem sabiando exatamente o que estava fazendo, só que tinha adorado criar um site meu.'
+    },
+    {
+      year: 2017,
+      description: 'Iniciei a faculdade Ciência da Computação na UNIFESO, onde realmente conheci a programação, a logica e as boas praticas para desenvolver um site.'
+    },
+    {
+      year: 2020,
+      description: 'A faculdade me abriu portar e conhecimente e me deu a oportunidade do merdado de trabalho na area da programação. Onde iniciei como estagio na empresa Noclaf.'
+    },
+    {
+      year: 2023,
+      description: 'E hoje sou programador Desenvolvedor Front End, com 3 anos de experiencia em Angular, ja trabalhei com React.js, Scss, Vue, AWS e muitas outras tecnologias.'
+    },
+  ]
+
   ngOnInit(): void {
      // add vanilla-tilt effect on .<class-name> cards
     //  VanillaTilt.init(
