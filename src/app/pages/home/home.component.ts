@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
   time_line = [
     {
       year: 2014,
-      description: 'O primeira contato com programação foi com HTML e CSS basico, mesmo nem sabiando exatamente o que estava fazendo, só que tinha adorado criar um site meu.'
+      description: 'O primeiro contato com programação foi com HTML e CSS basico, mesmo nem sabendo exatamente o que estava fazendo, só que tinha adorado criar um site meu.'
     },
     {
       year: 2017,
