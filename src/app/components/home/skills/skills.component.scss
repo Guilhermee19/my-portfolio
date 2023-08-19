@@ -1,0 +1,91 @@
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 40s;
+$qtdSkills: 9;
+
+// Animation
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-220px * $qtdSkills))}
+}
+
+
+::ng-deep{
+  app-skills{
+    width: 100%;
+  }
+}
+
+// Styling
+.slider {
+	position: relative;
+	width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+	overflow:hidden;
+
+	&::before,
+	&::after {
+		// @include white-gradient;
+		content: "";
+		height: max-content;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+
+	.slide-track {
+    position: relative;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(220px * $qtdSkills*2);
+
+    &:nth-child(2){
+      animation-direction: reverse;
+    }
+
+    &:hover {
+      animation-play-state: paused;
+    }
+	}
+
+	.slide {
+		width: 220px;
+		height: 100px;
+
+    figure{
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img{
+        object-fit: contain;
+        aspect-ratio: 1/1;
+        padding: 15px 0;
+        transition: all .2s;
+      }
+
+      // &:hover {
+      //   transform: scale(1.1);
+      // }
+    }
+	}
+}

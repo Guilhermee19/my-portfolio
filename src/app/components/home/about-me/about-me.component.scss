@@ -1,0 +1,216 @@
+.row{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .swiper {
+    width: 35%;
+    height: 300px;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    .swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets {
+      left: 10px;
+      right: auto;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--white);
+    }
+  }
+
+  .swiper-slide {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    h3{
+      width: 100%;
+      color: var(--blue);
+      text-align: left;
+      margin-bottom: 20px;
+      padding-left: 70px
+    }
+
+    h5{
+      width: 100%;
+      color: var(--white);
+      text-align: left;
+      min-height: 180px;
+      padding-left: 70px;
+      margin-right: auto;
+    }
+  }
+
+  figure{
+    position: relative;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      width: 30vw;
+      max-width: 480px !important;
+      min-width: 240px !important;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+    }
+
+    // .social{
+    //   position: absolute;
+    //   bottom: -70px;
+    //   width: max-content;
+    //   display: inline-block;
+
+    .social{
+      position:absolute;
+      bottom: -80px;
+      width: max-content;
+      display: inline-block;
+      -ms-transform:translate(0, 0);
+      -webkit-transform:translate(0, 0);
+      transform:translate(0, 0);
+
+      a {
+        color:var(--white);
+        // background: #DB6E82;
+        border-radius:4px;
+        text-align:center;
+        text-decoration:none;
+        font-family:fontawesome;
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 40px;
+        font-size: 30px;
+        padding-top: 5px;
+        margin:0 2px;
+        -o-transition:all .4s;
+        -webkit-transition: all .4s;
+        -moz-transition: all .4s;
+        transition: all .4s;
+         -webkit-font-smoothing: antialiased;
+
+        &:nth-of-type(1):before {
+          content:'\f113';
+        }
+        &:nth-of-type(2):before {
+        content:'\f1cb';
+        }
+        &:nth-of-type(3):before {
+          content:'\f08c';
+        }
+        &:nth-of-type(4):before {
+          content:'\f0e0';
+        }
+
+        &:hover {
+          background: var(--blue);
+
+          span {
+            bottom:50px;
+            visibility:visible;
+            opacity:1;
+          }
+        }
+
+        span {
+          color:#666;
+          position:absolute;
+          font-family:sans-serif;
+          bottom:0;
+          left:-27px;
+          right:-27px;
+          padding:5px 7px;
+          z-index:-1;
+          font-size:14px;
+          border-radius:2px;
+          background:#fff;
+          visibility:hidden;
+          opacity:0;
+          -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+          &:before {
+            content:'';
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #fff;
+            position:absolute;
+            bottom:-5px;
+            left:46px;
+
+            span {
+              bottom:50px;
+              visibility:visible;
+              opacity:1;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  h5{
+    color: var(--white);
+
+    span{
+      color: var(--blue);
+      padding-left: 45px;
+
+      &:last-child,
+      &:first-child{
+        padding: 0 !important;
+      }
+    }
+
+  }
+
+  @media screen and (max-width: 940px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+
+    .swiper{
+      order: 2;
+      width: 100%;
+      max-width: 430px;
+    }
+
+    #description {
+      max-width: max-content;
+    }
+
+    h5{
+      order: 3;
+      width: 100%;
+      max-width: 315px;
+    }
+
+    figure{
+      order: 1;
+      width: 100%;
+      margin-bottom: 100px;
+
+      img{
+        width: 40vw;
+      }
+    }
+  }
+}

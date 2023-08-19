@@ -13,7 +13,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SwiperModule } from 'swiper/angular';
-import { CarouselProjectsComponent } from './components/carousel-projects/carousel-projects.component';
 import { GamesComponent } from './pages/games/games.component';
 import { MemoryGameComponent } from './pages/games/memory-game/memory-game.component';
 import { IconDirective } from './directives/icon.directive';
@@ -27,7 +26,10 @@ import { VerticalScrollComponent } from './components/vertical-scroll/vertical-s
 import { TerminalComponent } from './components/terminal/terminal.component';
 import { GameBoyComponent } from './components/game-boy/game-boy.component';
 import { TicTacToeComponent } from './pages/games/tic-tac-toe/tic-tac-toe.component';
-import { SkillsComponent } from './components/skills/skills.component';
+import { SkillsComponent } from './components/home/skills/skills.component';
+import { AboutMeComponent } from './components/home/about-me/about-me.component';
+import { CarouselProjectsComponent } from './components/home/carousel-projects/carousel-projects.component';
+import { BlockComponent } from './components/block/block.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { SkillsComponent } from './components/skills/skills.component';
     GameBoyComponent,
     TicTacToeComponent,
     SkillsComponent,
+    AboutMeComponent,
+    BlockComponent,
   ],
   imports: [
     BrowserModule,

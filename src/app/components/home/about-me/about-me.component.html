@@ -1,0 +1,37 @@
+<div class="row">
+
+  <swiper
+    [direction]="'vertical'"
+    [slidesPerView]=1
+    [spaceBetween]=1
+    [mousewheel]=true
+    [pagination]="{ clickable: true }"
+    class="mySwiper"
+  >
+    <ng-template swiperSlide *ngFor="let obj of time_line">
+      <h3> {{ obj.year }} </h3>
+      <h5 id="description"> {{ obj.description }} </h5>
+    </ng-template>
+  </swiper>
+
+  <figure>
+    <img src="../../../assets/imagens/picture minha.png" alt="my picture">
+    <div class="social">
+      <a href="https://github.com/Guilhermee19" rel="noopener" target="_blank"><span>Github</span></a>
+      <a href="https://codepen.io/Guilhermee19" rel="noopener" target="_blank"><span>CodePen</span></a>
+      <a href="https://www.linkedin.com/in/gui-santana/" rel="noopener" target="_blank"><span>Linkedin</span></a>
+      <a href="mailto:eu@iamgui.dev" rel="noopener" target="_blank"><span>E-mail</span></a>
+    </div>
+  </figure>
+
+  <h5>
+    <span> {{'"developer" : {'}} </span><br>
+      <span>first_name:</span> 'Guilherme' ,<br>
+      <span>last_name:</span> 'Santana Rocha' ,<br>
+      <span>age:</span> {{ calcularIdade('1998-07-19') }} ,<br>
+      <span>date_of_birth:</span> 1998-07-19 ,<br>
+      <span>nationality:</span> 'Brazilian' ,<br>
+      <span>state:</span> 'RJ'<br>
+    <span> {{'}'}} </span>
+  </h5>
+</div>

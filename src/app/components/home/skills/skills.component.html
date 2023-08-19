@@ -1,0 +1,23 @@
+<div class="slider">
+	<div class="slide-track">
+		<div class="slide" *ngFor="let skill of carousel.slider1">
+			<figure>
+        <img [src]="skill.img" height="100" width="250" alt="" />
+      </figure>
+		</div>
+	</div>
+  <div class="slide-track">
+		<div class="slide" *ngFor="let skill of carousel.slider2">
+			<figure>
+        <img [src]="skill.img" height="100" width="250" alt="" />
+      </figure>
+		</div>
+	</div>
+  <div class="slide-track">
+		<div class="slide" *ngFor="let skill of carousel.slider3">
+			<figure>
+        <img [src]="skill.img" height="100" width="250" alt="" />
+      </figure>
+		</div>
+	</div>
+</div>

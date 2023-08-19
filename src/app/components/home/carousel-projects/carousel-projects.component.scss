@@ -2,12 +2,15 @@
 @import "~swiper/scss/effect-coverflow";
 @import "~swiper/scss/pagination";
 .swiper {
+  position: relative;
   width: 100%;
   padding-top: 70px;
   padding-bottom: 100px;
   transform: scale(0);
   opacity: 0;
   animation: show 0.5s ease forwards;
+  z-index: 20;
+
   .swiper-slide {
     width: 300px;
     aspect-ratio: 20/12;
@@ -22,13 +25,13 @@
       width: 500px;
     }
     .card_image {
-      box-shadow: 0px 0px 10px #00000061;
       display: block;
       width: 100%;
       height: 100%;
       transition: all 0.5s ease;
 
       img {
+        position: relative;
         opacity: 1;
         width: 100%;
         height: 100%;
@@ -36,7 +39,9 @@
         border-radius: 5px;
         transition: all 0.5s ease;
         border: 5px solid black;
-        border-bottom: 20px solid black;
+        border-bottom: 18px solid black;
+        box-shadow: 0px 0px 10px #00000061;
+        z-index: 10;
       }
     }
     &.gived {
@@ -46,12 +51,14 @@
     }
 
     .detail {
+      position: relative;
       display: flex;
       justify-content: space-between;
       height: 0%;
       opacity: 0;
       overflow: hidden;
       transition: var(--ts);
+      z-index: 70 !important;
 
       .text {
         * {
@@ -123,6 +130,9 @@
           }
         }
       }
+      .shadow {
+        bottom: -20px;
+      }
     }
 
     .shadow {
@@ -138,6 +148,23 @@
     }
   }
 }
+
+#monitor{
+  position: absolute;
+  top: 39.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  object-fit: contain;
+  z-index: 10;
+
+  @media screen and (max-width: 1400px) {
+    top: 39.5%;
+    width: 400px;
+  }
+
+}
+
 
 @keyframes show {
   to {
