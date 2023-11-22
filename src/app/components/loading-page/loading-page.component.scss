@@ -1,0 +1,57 @@
+section{
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background-color: var(--bg_black);
+  background-color: rgba(0, 0, 0, 0.4);
+  font-weight: 400;
+  overflow: hidden;
+  padding: 30px 0 0 30px;
+  text-align: center;
+  z-index: 8888888;
+  backdrop-filter: blur(2px);
+}
+
+.pacman{
+  width:80px;
+  height:80px;
+  background:yellow;
+  border-radius:50%;
+  clip-path: polygon(100% 0, 100% 0, 50% 50%, 100% 100%, 100% 100%, 0 100%, 0 0);
+  animation:eating ease 0.5s infinite;
+  z-index:1;
+}
+
+@keyframes eating{
+  0%{
+    clip-path: polygon(100% 0, 100% 0, 50% 50%, 100% 100%, 100% 100%, 0 100%, 0 0);
+  }
+  50%{
+    clip-path: polygon(100% 0, 100% 50%, 50% 50%, 100% 50%, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+.dot{
+  width:12px;
+  height:12px;
+  background:#fff;
+  border-radius:50%;
+  animation:move ease-in-out 1s infinite;
+}
+
+@keyframes move{
+  0%{
+    transform:translateX(100%);
+    opacity:0;
+  }
+  50%{
+    opacity:1;
+  }
+  100%{
+    transform:translateX(-200%);
+    opacity:0;
+  }
+}

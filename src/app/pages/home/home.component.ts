@@ -28,12 +28,15 @@ export class HomeComponent implements OnInit {
   constructor(
     private el: ElementRef,
     private router: Router
-    ) { }
+  ) { }
 
   year= new Date().getFullYear();
-
+  loading = true
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1 * 1000);
   }
 
   startGame(){

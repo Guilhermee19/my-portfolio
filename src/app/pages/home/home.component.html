@@ -1,5 +1,7 @@
 <main>
-  <section class="start">
+  <app-loading-page *ngIf="loading"></app-loading-page>
+
+  <section class="start" *ngIf="!loading">
     <div class="title_name">
       <h2>{{ "terminal.hello_i_am" | translate }}</h2>
       <h1><span>Guilherme</span> Santana</h1>
@@ -8,7 +10,7 @@
     <app-vertical-scroll></app-vertical-scroll>
   </section>
 
-  <section class="about">
+  <section class="about" *ngIf="!loading">
     <header>
       <h4>01.</h4>
       <h3> {{ "about_me" | translate }}</h3>
@@ -17,7 +19,7 @@
     <app-about-me></app-about-me>
   </section>
 
-  <section class="projects">
+  <section class="projects" *ngIf="!loading">
     <header>
       <h4>02.</h4>
       <h3> {{ "projects" | translate }}</h3>
@@ -25,7 +27,7 @@
     <app-carousel-projects></app-carousel-projects>
   </section>
 
-  <section class="skills">
+  <section class="skills" *ngIf="!loading">
     <header>
       <h4>03.</h4>
       <h3> {{ "skills" | translate }}</h3>
@@ -38,7 +40,7 @@
     <img id="cuboMario" src="../../../assets/imagens/Cubo Mario.png" alt="">
   </section> -->
 
-  <footer>
+  <footer *ngIf="!loading">
     <p>© Copyright {{ year }} - Guilherme Santana</p>
   </footer>
 </main>

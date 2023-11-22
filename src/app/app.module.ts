@@ -23,13 +23,13 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 import { VerticalScrollComponent } from './components/vertical-scroll/vertical-scroll.component';
-import { TerminalComponent } from './components/terminal/terminal.component';
 import { GameBoyComponent } from './components/game-boy/game-boy.component';
 import { TicTacToeComponent } from './pages/games/tic-tac-toe/tic-tac-toe.component';
 import { SkillsComponent } from './components/home/skills/skills.component';
 import { AboutMeComponent } from './components/home/about-me/about-me.component';
 import { CarouselProjectsComponent } from './components/home/carousel-projects/carousel-projects.component';
 import { BlockComponent } from './components/block/block.component';
+import { LoadingPageComponent } from './components/loading-page/loading-page.component';
 
 @NgModule({
   declarations: [
@@ -41,12 +41,12 @@ import { BlockComponent } from './components/block/block.component';
     GamesComponent,
     MemoryGameComponent,
     VerticalScrollComponent,
-    TerminalComponent,
     GameBoyComponent,
     TicTacToeComponent,
     SkillsComponent,
     AboutMeComponent,
     BlockComponent,
+    LoadingPageComponent,
   ],
   imports: [
     BrowserModule,

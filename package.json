@@ -21,6 +21,7 @@
     "@angular/router": "^14.1.0",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
+    "@types/jquery": "^3.5.29",
     "lodash": "^4.17.21",
     "ngx-mask": "^14.2.4",
     "rxjs": "~7.5.0",
