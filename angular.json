@@ -34,7 +34,6 @@
               "node_modules/aos/dist/aos.css"
             ],
             "scripts": [
-              "https://cdn.emailjs.com/dist/email.min.js"
             ]
           },
           "configurations": {
