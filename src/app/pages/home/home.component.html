@@ -3,15 +3,15 @@
 
   <section class="start" *ngIf="!loading">
     <div class="title_name">
-      <h2>{{ "terminal.hello_i_am" | translate }}</h2>
-      <h1><span>Guilherme</span> Santana</h1>
-      <h2>{{ "terminal.i_am" | translate }} <span>{{ "terminal.front_end_developer" | translate }}</span></h2>
+      <h2 data-aos="fade-up">{{ "terminal.hello_i_am" | translate }}</h2>
+      <h1 data-aos="fade-left"><span>Guilherme</span> Santana</h1>
+      <h2 data-aos="fade-up">{{ "terminal.i_am" | translate }} <span>{{ "terminal.front_end_developer" | translate }}</span></h2>
     </div>
     <app-vertical-scroll></app-vertical-scroll>
   </section>
 
   <section class="about" *ngIf="!loading">
-    <header>
+    <header data-aos="fade-up">
       <h4>01.</h4>
       <h3> {{ "about_me" | translate }}</h3>
     </header>
@@ -20,19 +20,19 @@
   </section>
 
   <section class="projects" *ngIf="!loading">
-    <header>
+    <header data-aos="fade-up">
       <h4>02.</h4>
       <h3> {{ "projects" | translate }}</h3>
     </header>
-    <app-carousel-projects></app-carousel-projects>
+    <app-carousel-projects data-aos="fade-up"></app-carousel-projects>
   </section>
 
   <section class="skills" *ngIf="!loading">
-    <header>
+    <header data-aos="fade-up">
       <h4>03.</h4>
       <h3> {{ "skills" | translate }}</h3>
     </header>
-    <app-skills></app-skills>
+    <app-skills data-aos="fade-up"></app-skills>
   </section>
 
   <!-- <section class="easter-eggs">

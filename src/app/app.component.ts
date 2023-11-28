@@ -1,11 +1,11 @@
-import { Component, HostListener } from '@angular/core';
-
+import { Component, HostListener, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'my-portfolio';
 
   // @HostListener('mousemove', ['$event'])
@@ -28,15 +28,30 @@ export class AppComponent {
   //   this.positionMouse(event);
   // }
 
+  // @HostListener('mouseenter', ['$event'])
+  // mouseenter(event: MouseEvent) {
+  //   const minhaDiv: any = document.querySelector('.circle_mouse');
+  //   minhaDiv.style.opacity = 1;
+  // }
+
+  // @HostListener('mouseleave', ['$event'])
+  // mouseleave(event: MouseEvent) {
+  //   const minhaDiv: any = document.querySelector('.circle_mouse');
+  //   minhaDiv.style.opacity = 0;
+  // }
+
+
   circleX = 100;
   circleY = 100;
 
-  positionMouse(event: any){
-    console.log(event);
-
-    const x = event.pageX-20;
-    const y = event.pageY-20;
-    this.circleX = x;
-    this.circleY = y;
+  ngOnInit() {
+    AOS.init();
   }
+
+  // positionMouse(event: any){
+  //   const x = event.pageX-20;
+  //   const y = event.pageY-20;
+  //   this.circleX = x;
+  //   this.circleY = y;
+  // }
 }

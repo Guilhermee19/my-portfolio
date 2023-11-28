@@ -30,9 +30,12 @@
               "src/_redirects"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/aos/dist/aos.css"
             ],
-            "scripts": []
+            "scripts": [
+              "https://cdn.emailjs.com/dist/email.min.js"
+            ]
           },
           "configurations": {
             "production": {

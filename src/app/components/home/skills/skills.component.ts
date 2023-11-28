@@ -1,5 +1,5 @@
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
-
+// declare var Email: any;
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
@@ -76,6 +76,21 @@ export class SkillsComponent implements OnInit {
 
     this.carousel.slider3 = this.shuffleArray(this.skills);
     this.carousel.slider3 = this.carousel.slider3.concat(this.carousel.slider3);
+
+    this.enviarEmail();
+  }
+
+  enviarEmail() {
+    // Email.send({
+    //   SecureToken: 'MiwYjx9JucKTUAhe4', // Substitua pelo seu User ID do EmailJS
+    //   To: 'eu@iamgui.dev', // Substitua pelo destinatário
+    //   From: 'guilherme.santana1998@gmail.com', // Substitua pelo remetente
+    //   Subject: 'Assunto do E-mail',
+    //   Body: 'Corpo do E-mail',
+    // }).then(
+    //   (message: any) => alert('E-mail enviado com sucesso: ' + message),
+    //   (error: any) => console.error('Erro ao enviar e-mail:', error)
+    // );
   }
 
   shuffleArray(array: any[]) {
