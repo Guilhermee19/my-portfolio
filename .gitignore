@@ -7,10 +7,7 @@
 /bazel-out
 
 # Node
-/.angular
 /node_modules
-node_modules
-./node_modules
 npm-debug.log
 yarn-error.log
 
@@ -43,5 +40,3 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
-
-package-lock.json
