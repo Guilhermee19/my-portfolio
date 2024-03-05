@@ -56,12 +56,12 @@ export class NavbarComponent implements OnInit {
     {
       language: 'pt-br',
       title: 'Português',
-      img: '/assets/imagens/flag-pt.png'
+      img: '/assets/imagens/webp/flag-pt.webp'
     },
     {
       language: 'en',
       title: 'Ingles',
-      img: '/assets/imagens/flag-en.png'
+      img: '/assets/imagens/webp/flag-en.webp'
     }
   ];
 

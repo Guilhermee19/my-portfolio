@@ -18,7 +18,7 @@ export class CarouselProjectsComponent implements OnInit{
   listProjects = [
     {
       name: "Tour Virtual",
-      image: "assets/pages/tour-virtual.png",
+      image: "assets/pages/webp/tour-virtual.webp",
       technology: "Angular",
       hosted: "Vercel",
       link: 'https://tcctourvirtual.vercel.app/home',
@@ -26,7 +26,7 @@ export class CarouselProjectsComponent implements OnInit{
     },
     {
       name: "Filmes e Series Marvel",
-      image: "assets/pages/movie-web.png",
+      image: "assets/pages/webp/movie-web.webp",
       technology: "React",
       hosted: "Vercel",
       link: 'https://react-movie-web-zeta.vercel.app//',
@@ -34,7 +34,7 @@ export class CarouselProjectsComponent implements OnInit{
     },
     {
       name: "Gerador de Conselhos",
-      image: "assets/pages/advice-generator.png",
+      image: "assets/pages/webp/advice-generator.webp",
       technology: "React",
       hosted: "Vercel",
       link: 'https://advice-generator-web.vercel.app/',
@@ -42,7 +42,7 @@ export class CarouselProjectsComponent implements OnInit{
     },
     {
       name: "Contagem Regressiva para o Ano Novo",
-      image: "assets/pages/countdown-timer.png",
+      image: "assets/pages/webp/countdown-timer.webp",
       technology: "HTML, CSS e JS Puro",
       hosted: "Vercel",
       link: 'https://countdown-timer-rosy.vercel.app/',
@@ -50,7 +50,7 @@ export class CarouselProjectsComponent implements OnInit{
     },
     {
       name: "Linktree personalizado",
-      image: "assets/pages/bio-lm-web.png",
+      image: "assets/pages/webp/bio-lm-web.webp",
       technology: "Angular",
       hosted: "Vercel",
       link: 'https://los-mundissas.vercel.app/',
@@ -58,7 +58,7 @@ export class CarouselProjectsComponent implements OnInit{
     },
     {
       name: "PokeDex",
-      image: "assets/pages/pokedex-web.png",
+      image: "assets/pages/webp/pokedex-web.webp",
       technology: "Angular",
       hosted: "Vercel",
       link: 'https://pokedex-web-mocha.vercel.app/',
@@ -66,7 +66,7 @@ export class CarouselProjectsComponent implements OnInit{
     },
     {
       name: "Rastreador de endereço IP",
-      image: "assets/pages/ip-address-tracker.png",
+      image: "assets/pages/webp/ip-address-tracker.webp",
       technology: "Angular",
       hosted: "Vercel",
       link: 'https://my-ip-address-tracker.vercel.app/',
