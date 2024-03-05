@@ -67,13 +67,19 @@ export class SkillsComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.carousel.slider1 = this.shuffleArray(this.skills);
+    this.carousel.slider1 = this.shuffleArray(this.skills.splice(0,3));
+    this.carousel.slider1 = this.carousel.slider1.concat(this.carousel.slider1);
+    this.carousel.slider1 = this.carousel.slider1.concat(this.carousel.slider1);
     this.carousel.slider1 = this.carousel.slider1.concat(this.carousel.slider1);
 
-    this.carousel.slider2 = this.shuffleArray(this.skills);
+    this.carousel.slider2 = this.shuffleArray(this.skills.splice(0,3));
+    this.carousel.slider2 = this.carousel.slider2.concat(this.carousel.slider2);
+    this.carousel.slider2 = this.carousel.slider2.concat(this.carousel.slider2);
     this.carousel.slider2 = this.carousel.slider2.concat(this.carousel.slider2);
 
-    this.carousel.slider3 = this.shuffleArray(this.skills);
+    this.carousel.slider3 = this.shuffleArray(this.skills.splice(0,3));
+    this.carousel.slider3 = this.carousel.slider3.concat(this.carousel.slider3);
+    this.carousel.slider3 = this.carousel.slider3.concat(this.carousel.slider3);
     this.carousel.slider3 = this.carousel.slider3.concat(this.carousel.slider3);
 
   }

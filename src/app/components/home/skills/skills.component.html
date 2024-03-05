@@ -1,23 +1,26 @@
-<div class="slider">
-	<div class="slide-track">
-		<div class="slide" *ngFor="let skill of carousel.slider1">
-			<figure>
+<section>
+  <div class="brands-list">
+    <div class="wrapper">
+      <figure *ngFor="let skill of carousel.slider1">
         <img [src]="skill.img" height="100" width="250" alt="" />
       </figure>
-		</div>
-	</div>
-  <div class="slide-track">
-		<div class="slide" *ngFor="let skill of carousel.slider2">
-			<figure>
+    </div>
+  </div>
+
+  <div class="brands-list">
+    <div class="wrapper reverse">
+      <figure *ngFor="let skill of carousel.slider2">
         <img [src]="skill.img" height="100" width="250" alt="" />
       </figure>
-		</div>
-	</div>
-  <div class="slide-track">
-		<div class="slide" *ngFor="let skill of carousel.slider3">
-			<figure>
+    </div>
+  </div>
+
+
+  <div class="brands-list">
+    <div class="wrapper">
+      <figure *ngFor="let skill of carousel.slider3">
         <img [src]="skill.img" height="100" width="250" alt="" />
       </figure>
-		</div>
-	</div>
-</div>
+    </div>
+  </div>
+</section>
