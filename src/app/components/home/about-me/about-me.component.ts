@@ -18,19 +18,19 @@ export class AboutMeComponent implements OnInit {
   time_line = [
     {
       year: 2014,
-      description: 'O primeiro contato com programação foi com HTML e CSS basico, mesmo nem sabendo exatamente o que estava fazendo, só que tinha adorado criar um site meu.'
+      description: 'text_about_me_1'
     },
     {
       year: 2017,
-      description: 'Iniciei a faculdade Ciência da Computação na UNIFESO, onde realmente conheci a programação, a logica e as boas praticas para desenvolver um site.'
+      description: 'text_about_me_2'
     },
     {
       year: 2020,
-      description: 'A faculdade me abriu portar e conhecimente e me deu a oportunidade do merdado de trabalho na area da programação. Onde iniciei como estagio na empresa Noclaf.'
+      description: 'text_about_me_3'
     },
     {
       year: 2023,
-      description: 'E hoje sou programador Desenvolvedor Front End, com 3 anos de experiencia em Angular, ja trabalhei com React.js, Scss, Vue, AWS e muitas outras tecnologias.'
+      description: 'text_about_me_4'
     },
   ]
 

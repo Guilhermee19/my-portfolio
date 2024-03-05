@@ -10,7 +10,7 @@
   >
     <ng-template swiperSlide *ngFor="let obj of time_line">
       <h3> {{ obj.year }} </h3>
-      <h5 id="description"> {{ obj.description }} </h5>
+      <h5 id="description"> {{ obj.description | translate }} </h5>
     </ng-template>
   </swiper>
 

@@ -9,8 +9,9 @@
     "i_am":"I'm a",
     "front_end_developer": "Front-end Developer"
   },
-  "text_about_me_1":"With almost three years of experience in Angular, I am a front-end developer specialized in creating responsive and attractive websites with fun animations. My knowledge of Scss and best practices ensures the efficiency and easy maintenance of the projects I develop.",
-  "text_about_me_2":"I am committed to continuous learning and growth in the software development market. Currently, I am expanding my back-end skills with Django and Python and striving to become a full-stack developer to offer more complete and efficient solutions.",
-
+  "text_about_me_1": "My first encounter with programming was with basic HTML and CSS, even without exactly knowing what I was doing, but I loved creating my own website.",
+  "text_about_me_2": "I started my Computer Science degree at UNIFESO, where I truly got to know programming, logic, and best practices for website development.",
+  "text_about_me_3": "College opened doors for me and gave me knowledge, providing me with the opportunity to enter the job market in the programming field. I started as an intern at Noclaf company.",
+  "text_about_me_4": "And today I am a Front End Developer, with 3 years of experience in Angular. I have also worked with React.js, Scss, Vue, AWS, and many other technologies.",
   "access":"Access"
 }
