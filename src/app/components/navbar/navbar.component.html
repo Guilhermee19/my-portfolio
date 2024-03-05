@@ -7,9 +7,9 @@
         <!-- <a href="#" class="f-20"> Projetos </a> -->
         <!-- <a href="#" class="f-20"> Habilidades </a> -->
         <!-- <a href="#" class="f-20"> Sobre </a> -->
-        <a class="f-20" [matMenuTriggerFor]="menu">
+        <figure class="f-20" [matMenuTriggerFor]="menu">
           <img [src]="selected_country.img" alt="flag">
-        </a>
+        </figure>
         <mat-menu #menu="matMenu" [style]="'position: absolute'">
           <button mat-menu-item *ngFor="let country of countries" (click)="changeLanguage(country)">
             <img [src]="country.img" alt="flag">

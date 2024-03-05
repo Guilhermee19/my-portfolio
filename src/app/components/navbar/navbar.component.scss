@@ -25,37 +25,37 @@ section{
     }
 
     strong{
-        color: var(--white);
-        font-weight: bold;
-        cursor: pointer;
+      color: var(--white);
+      font-weight: bold;
+      cursor: pointer;
 
-        span{
-            color: var(--blue);
-        }
+      span{
+        color: var(--blue);
+      }
     }
 
     nav{
-        position: relative;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0 25px;
+
+      figure{
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+        color: var(--white);
         display: flex;
-        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        gap: 0 25px;
 
-        a{
-            font-weight: bold;
-            text-decoration: none;
-            cursor: pointer;
-            color: var(--white);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img{
-              width: 25px;
-              aspect-ratio: 1/1;
-              object-fit: contain;
-            }
+        img{
+          width: 25px;
+          aspect-ratio: 1/1;
+          object-fit: contain;
         }
+      }
     }
 }
 
