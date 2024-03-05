@@ -22,12 +22,12 @@
     </div>
     <div class="detail">
       <div class="text">
-        <h5>{{ project.name }}</h5>
+        <strong class="f-28">{{ project.name }}</strong>
         <p>{{ project.technology }} - {{ project.hosted }}</p>
       </div>
       <div class="link">
-        <a [href]="project.link" target="_blank">  {{ "access" | translate }} </a>
-        <a [href]="project.link_project" target="_blank">
+        <a aria-label="link projeto" [href]="project.link" target="_blank">  {{ "access" | translate }} </a>
+        <a aria-label="link do codigo no Github" [href]="project.link_project" target="_blank">
           <i icon="icon_github" class="icon_color"></i>
         </a>
       </div>

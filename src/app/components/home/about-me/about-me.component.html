@@ -10,7 +10,7 @@
   >
     <ng-template swiperSlide *ngFor="let obj of time_line">
       <h3> {{ obj.year }} </h3>
-      <h5 id="description"> {{ obj.description | translate }} </h5>
+      <p class="f-28" id="description"> {{ obj.description | translate }} </p>
     </ng-template>
   </swiper>
 
@@ -18,15 +18,15 @@
   >
     <img class="my-picture" src="../../../assets/imagens/webp/picture-minha.webp" alt="my picture">
     <div class="social">
-      <a href="https://github.com/Guilhermee19" rel="noopener" target="_blank"><span>Github</span></a>
-      <a href="https://codepen.io/Guilhermee19" rel="noopener" target="_blank"><span>CodePen</span></a>
-      <a href="https://www.linkedin.com/in/gui-santana/" rel="noopener" target="_blank"><span>Linkedin</span></a>
-      <a href="mailto:eu@iamgui.dev" rel="noopener" target="_blank"><span>E-mail</span></a>
+      <a aria-label="link Github" href="https://github.com/Guilhermee19" rel="noopener" target="_blank"><span>Github</span></a>
+      <a aria-label="link CodePen" href="https://codepen.io/Guilhermee19" rel="noopener" target="_blank"><span>CodePen</span></a>
+      <a aria-label="link Linkedin" href="https://www.linkedin.com/in/gui-santana/" rel="noopener" target="_blank"><span>Linkedin</span></a>
+      <a aria-label="link E-mail" href="mailto:eu@iamgui.dev" rel="noopener" target="_blank"><span>E-mail</span></a>
       <!-- <a href="https://bere.al/guix_1998" rel="noopener" target="_blank"><span>BeReal</span></a> -->
     </div>
   </figure>
 
-  <h5 data-aos="fade-up" data-aos-delay="450"
+  <strong class="f-28" data-aos="fade-up" data-aos-delay="450"
   >
     <span> {{'"developer" : {'}} </span><br>
       <span>first_name:</span> 'Guilherme' ,<br>
@@ -36,5 +36,5 @@
       <span>nationality:</span> 'Brazilian' ,<br>
       <span>state:</span> 'RJ'<br>
     <span> {{'}'}} </span>
-  </h5>
+  </strong>
 </div>

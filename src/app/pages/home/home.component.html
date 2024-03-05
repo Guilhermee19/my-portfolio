@@ -13,8 +13,7 @@
 
   <section class="about" *ngIf="!loading">
     <header data-aos="fade-up">
-      <h4>01.</h4>
-      <h3> {{ "about_me" | translate }}</h3>
+      <h3> <strong class="f-32">01.</strong> {{ "about_me" | translate }}</h3>
     </header>
 
     <app-about-me></app-about-me>
@@ -22,24 +21,21 @@
 
   <section class="projects" *ngIf="!loading">
     <header data-aos="fade-up">
-      <h4>02.</h4>
-      <h3> {{ "projects" | translate }}</h3>
+      <h3> <strong class="f-32">02.</strong> {{ "projects" | translate }}</h3>
     </header>
     <app-carousel-projects data-aos="fade-up"></app-carousel-projects>
   </section>
 
   <section class="skills" *ngIf="!loading">
     <header data-aos="fade-up">
-      <h4>03.</h4>
-      <h3> {{ "skills" | translate }}</h3>
+      <h3> <strong class="f-32">03.</strong>  {{ "skills" | translate }}</h3>
     </header>
     <app-skills data-aos="fade-up"></app-skills>
   </section>
 
   <!-- <section class="contact" *ngIf="!loading">
     <header data-aos="fade-up">
-      <h4>04.</h4>
-      <h3> {{ "contact" | translate }}</h3>
+      <h3> <strong class="f-32">04.</strong> {{ "contact" | translate }}</h3>
     </header>
     <app-contact data-aos="fade-up"></app-contact>
   </section> -->
