@@ -16,18 +16,19 @@ main {
 
   .circle{
     position: absolute;
-    top: -60%;
-    left: -140%;
-    width: 280vw;
-    height: 280vw;
+    top: -2000px;
+    left: -3000px;
+    width: 4500px;
+    height: 4500px;
     border-radius: 50%;
     background-color: #0563e9;
     filter: blur(85vw);
-    opacity: .5;
+    opacity: .3;
   }
 
   section {
     header{
+      margin-bottom: 1rem;
       h3{
         color: var(--blue);
         line-height: 1;
