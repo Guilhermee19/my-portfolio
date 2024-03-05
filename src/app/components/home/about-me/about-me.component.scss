@@ -71,7 +71,8 @@
         transition: var(--ts);
 
         &:hover{
-          transform: rotateY(180deg);
+          // transform: rotateY(180deg);
+          transform: translateY(-1rem);
         }
       }
     }

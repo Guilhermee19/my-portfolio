@@ -11,14 +11,22 @@ main {
   flex-direction: column;
   flex-direction: center;
   justify-content: center;
-  background-image: url("../../../assets/imagens/webp/blue-gradient-background.webp");
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #001e48;
+  overflow: hidden;
+
+  .circle{
+    position: absolute;
+    top: -70%;
+    left: -140%;
+    width: 280vw;
+    height: 280vw;
+    border-radius: 50%;
+    background-color: #0563e9;
+    filter: blur(75vw);
+    opacity: .7;
+  }
 
   section {
-    // margin-bottom: 2px;
-
     &.start{
       height: 100vh;
       display: flex;
@@ -26,7 +34,6 @@ main {
       justify-content: center;
       align-items: center;
       gap: 20px;
-      background-color: var(--bg_black);
 
       img{
         width: 82px;
@@ -75,8 +82,6 @@ main {
       width: 100%;
       height: max-content;
       min-height: 100vh;
-      background-color: var(--bg_black);
-
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -85,8 +90,6 @@ main {
 
     &.projects {
       height: 100vh;
-      background-color: var(--bg_black);
-
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -95,8 +98,6 @@ main {
     &.skills {
       width: 100%;
       min-height: 75vh;
-      background-color: var(--bg_black);
-
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -116,8 +117,6 @@ main {
     &.contact {
       width: 100%;
       min-height: 75vh;
-      background-color: var(--bg_black);
-
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -147,24 +146,17 @@ main {
             color: var(--white);
           }
         }
-
-        button{
-
-        }
       }
     }
 
     &.easter-eggs {
       width: 100%;
       height: 15vh;
-      background-color: var(--bg_black);
-
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-
 
       img{
         width: 80px;
