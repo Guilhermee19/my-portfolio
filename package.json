@@ -25,7 +25,6 @@
     "@ngx-translate/http-loader": "^7.0.0",
     "@types/jquery": "^3.5.29",
     "aos": "^2.3.4",
-    "lodash": "^4.17.21",
     "rxjs": "~7.5.0",
     "swiper": "^8.4.7",
     "tslib": "^2.3.0",
