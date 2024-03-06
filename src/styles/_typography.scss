@@ -2,14 +2,6 @@ $base-font-size: 19;
 $min-font-size: 10;
 $max-font-size: 52;
 
-@for $i from $min-font-size through $max-font-size {
-  $class-name: '.fd-#{$i}';
-
-  #{$class-name} {
-    font-size: calc($i / $base-font-size * 1rem);
-  }
-}
-
 .one-line {
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -17,6 +9,93 @@ $max-font-size: 52;
   -webkit-line-clamp: 1;
   overflow: hidden;
 }
+
+.fd-20 {   //  10 -> 20
+  font-size: calc(0.8928571428571428vw + 7.142857142857143px);
+
+  @media (min-width: 768px) {
+    font-size: calc(1.0135135135135136vw + 6.216216216216216px);
+  }
+  @media (min-width: 1360px) {
+    font-size: 20px;
+  }
+}
+
+.fd-25 {   //  12 -> 25
+  font-size: calc(1.1160714285714286vw + 8.428571428571429px) !important;
+
+  @media (min-width: 768px) {
+    font-size: calc(1.3513513513513513vw + 6.621621621621622px) !important;
+  }
+  @media (min-width: 1360px) {
+    font-size: 25px !important;
+  }
+}
+
+.fd-30 {   //  14 -> 30
+  font-size: calc(1.5625vw + 9px) !important;
+
+  @media (min-width: 768px) {
+    font-size: calc(1.5202702702702704vw + 9.324324324324325px) !important;
+  }
+  @media (min-width: 1360px) {
+    font-size: 30px !important;
+  }
+}
+
+.fd-35 {   //  16 -> 35
+  font-size: calc(1.7857142857142856vw + 10.285714285714286px) !important;
+
+  @media (min-width: 768px) {
+    font-size: calc(1.8581081081081081vw + 9.72972972972973px) !important;
+  }
+  @media (min-width: 1360px) {
+    font-size: 35px !important;
+  }
+}
+
+.fd-40 {   //  18 -> 40
+  font-size: calc(2.0089285714285716vw + 11.571428571428571px) !important;
+
+  @media (min-width: 768px) {
+    font-size: calc(2.195945945945946vw + 10.135135135135135px) !important;
+  }
+  @media (min-width: 1360px) {
+    font-size: 40px !important;
+  }
+}
+
+.fd-125 {  //  22 -> 125
+  font-size: calc(9.598214285714286vw + -8.714285714285714px) !important;
+
+  @media (min-width: 768px) {
+    font-size: calc(10.135135135135135vw + -12.837837837837839px) !important;
+  }
+  @media (min-width: 1360px) {
+    font-size: 125px !important;
+  }
+}
+
+h1{
+   @extend .fd-125;
+}
+
+h2{
+   @extend .fd-40;
+}
+
+h3{
+   @extend .fd-35;
+}
+
+h4{
+   @extend .fd-30
+}
+
+// h5{
+//    @extend .fd-25;
+// }
+
 
 @for $i from $min-font-size through $max-font-size {
   $class-name: '.f-#{$i}';
