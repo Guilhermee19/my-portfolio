@@ -15,7 +15,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       name: 'Css',
-      img: '/assets/icons/webp/Css logo.webp'
+      img: '/assets/icons/webp/css-logo.webp'
     },
     {
       name: 'Javascript',
@@ -23,15 +23,15 @@ export class SkillsComponent implements OnInit {
     },
     {
       name: 'Typescript',
-      img: '/assets/icons/webp/Typescript logo.webp'
+      img: '/assets/icons/webp/Typescript-logo.webp'
     },
     {
       name: 'Angular',
-      img: '/assets/icons/webp/Angular logo.webp'
+      img: '/assets/icons/webp/Angular-logo.webp'
     },
     {
       name: 'Git',
-      img: '/assets/icons/webp/Git logo.webp'
+      img: '/assets/icons/webp/Git-logo.webp'
     },
     {
       name: 'Python',
@@ -51,7 +51,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       name: 'Django',
-      img: '/assets/icons/webp/Django logo.webp'
+      img: '/assets/icons/webp/Django-logo.webp'
     },
     {
       name: 'Netlify',
