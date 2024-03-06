@@ -1,7 +1,6 @@
 
 .body {
   width:100vw;
-  // min-height:100vh;
   font-size: 10px;
   display:flex;
   justify-content: center;
@@ -10,9 +9,6 @@
   perspective: 100em;
 
   z-index: 8888888;
-  // background-color: rgba(0, 169, 236, 0.4);
-  // // background-color: rgba(0, 0, 0, 0.4);
-  // backdrop-filter: blur(2px);
 }
 
 @keyframes block-animation {

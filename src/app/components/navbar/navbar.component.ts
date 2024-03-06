@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -6,7 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
 
   @HostListener('window:scroll', ['$event.target'])
   scroll(e: any) {
@@ -67,15 +67,11 @@ export class NavbarComponent implements OnInit {
 
   selected_country: any;
 
-  ngOnInit(): void {
-  }
-
-   // ALTERAÇÃO DE IDIOMA
-   changeLanguage(country: any) {
+  // ALTERAÇÃO DE IDIOMA
+  changeLanguage(country: any) {
     this.selected_country = country
     localStorage.setItem('language', country.language)
 
     this.translate.use(country.language.match(/pt-br|en/) ? country.language : 'pt-br');
   }
-
 }

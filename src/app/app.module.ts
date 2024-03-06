@@ -17,7 +17,6 @@ import { GameBoyComponent } from './components/game-boy/game-boy.component';
 import { SkillsComponent } from './components/home/skills/skills.component';
 import { AboutMeComponent } from './components/home/about-me/about-me.component';
 import { CarouselProjectsComponent } from './components/home/carousel-projects/carousel-projects.component';
-import { BlockComponent } from './components/block/block.component';
 import { LoadingPageComponent } from './components/loading-page/loading-page.component';
 import { IconDirective } from './directives/icon.directive';
 
@@ -41,7 +40,6 @@ import { SwiperModule } from 'swiper/angular';
     GameBoyComponent,
     SkillsComponent,
     AboutMeComponent,
-    BlockComponent,
     LoadingPageComponent,
   ],
   imports: [

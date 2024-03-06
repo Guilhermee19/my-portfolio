@@ -1,6 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, ViewChild } from "@angular/core";
-import { SwiperComponent } from "swiper/angular";
-
+import { Component, ViewEncapsulation } from "@angular/core";
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 
 SwiperCore.use([EffectCoverflow, Pagination]);
@@ -12,8 +10,7 @@ SwiperCore.use([EffectCoverflow, Pagination]);
   encapsulation: ViewEncapsulation.None
 })
 
-export class CarouselProjectsComponent implements OnInit{
-  constructor() { }
+export class CarouselProjectsComponent{
 
   listProjects = [
     {
@@ -74,6 +71,4 @@ export class CarouselProjectsComponent implements OnInit{
     },
   ]
 
-  ngOnInit(): void {
-  }
 }

@@ -9,8 +9,6 @@ section{
     align-items: center;
     transition: all .2s;
     backdrop-filter: blur(10px);
-    // background: var(--bg_navbar);
-    // box-shadow: 0 10px 30px -10px #020c1bb3;
     z-index: 900;
 
     &.scroll_down{

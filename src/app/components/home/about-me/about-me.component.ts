@@ -1,5 +1,4 @@
-import { Component, OnInit, HostListener, ElementRef, ViewEncapsulation } from '@angular/core';
-import { SwiperComponent } from "swiper/angular";
+import { Component, ViewEncapsulation } from '@angular/core';
 
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 SwiperCore.use([EffectCoverflow, Pagination]);
@@ -11,9 +10,7 @@ SwiperCore.use([EffectCoverflow, Pagination]);
   encapsulation: ViewEncapsulation.None
 
 })
-export class AboutMeComponent implements OnInit {
-
-  constructor() { }
+export class AboutMeComponent {
 
   time_line = [
     {
@@ -33,9 +30,6 @@ export class AboutMeComponent implements OnInit {
       description: 'text_about_me_4'
     },
   ]
-
-  ngOnInit(): void {
-  }
 
   calcularIdade(dataNascimento: string) {
     var dataAtual = new Date();

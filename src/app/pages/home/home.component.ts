@@ -1,12 +1,6 @@
 import { Component, OnInit, HostListener, ElementRef, ViewEncapsulation } from '@angular/core';
-import { SwiperComponent } from "swiper/angular";
-
-import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
 import { Router } from '@angular/router';
 
-SwiperCore.use([EffectCoverflow, Pagination]);
-
-// import VanillaTilt from "vanilla-tilt";
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -41,7 +35,6 @@ export class HomeComponent implements OnInit {
 
   startGame(){
     const main: any = document.querySelector('cuboMario');
-    // console.log(main);
 
     main.classList.toggle('effect-open');
     setTimeout(() => {

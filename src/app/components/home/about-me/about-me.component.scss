@@ -78,12 +78,6 @@
       }
     }
 
-    // .social{
-    //   position: absolute;
-    //   bottom: -70px;
-    //   width: max-content;
-    //   display: inline-block;
-
     .social{
       position:absolute;
       bottom: -80px;
@@ -95,7 +89,6 @@
 
       a {
         color:var(--white);
-        // background: #DB6E82;
         border-radius:4px;
         text-align:center;
         text-decoration:none;
@@ -196,8 +189,6 @@
   }
 
   @media screen and (max-width: 940px) {
-    // flex-wrap: wrap;
-    // justify-content: center;
     gap: 1rem;
 
     figure{
