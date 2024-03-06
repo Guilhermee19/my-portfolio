@@ -95,11 +95,6 @@ h4{
    @extend .fd-30
 }
 
-// h5{
-//    @extend .fd-25;
-// }
-
-
 @for $i from $min-font-size through $max-font-size {
   $class-name: '.f-#{$i}';
 
