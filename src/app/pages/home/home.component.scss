@@ -11,7 +11,7 @@ main {
   flex-direction: column;
   flex-direction: center;
   justify-content: center;
-  background-color: #001e48;
+  background-color: var(--blue-dark);
   overflow: hidden;
 
   .circle{
@@ -21,7 +21,7 @@ main {
     width: 4500px;
     height: 4500px;
     border-radius: 50%;
-    background-color: #0563e9;
+    background-color: var(--background-effect);
     filter: blur(85vw);
     opacity: .3;
   }
