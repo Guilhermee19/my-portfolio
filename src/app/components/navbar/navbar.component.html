@@ -1,20 +1,18 @@
 <section id="navbar">
-    <strong class="f-24" routerLink="/">
-      <span>< Iam</span>Gui.dev />
-    </strong>
+  <strong class="f-28" routerLink="/">
+    <span>< Iam</span>Gui.dev />
+  </strong>
 
-    <nav>
-        <!-- <a href="#" class="f-20"> Projetos </a> -->
-        <!-- <a href="#" class="f-20"> Habilidades </a> -->
-        <!-- <a href="#" class="f-20"> Sobre </a> -->
-        <figure class="f-20" [matMenuTriggerFor]="menu">
-          <img [src]="selected_country.img" alt="flag">
-        </figure>
-        <mat-menu #menu="matMenu" [style]="'position: absolute'">
-          <button mat-menu-item *ngFor="let country of countries" (click)="changeLanguage(country)">
-            <img [src]="country.img" alt="flag">
-            <p> {{ country.title }} </p>
-          </button>
-        </mat-menu>
-    </nav>
+  <nav>
+    <figure class="f-20" [matMenuTriggerFor]="menu">
+      <img [src]="selected_country.img" alt="flag">
+    </figure>
+
+    <mat-menu #menu="matMenu" [style]="'position: absolute'">
+      <button mat-menu-item *ngFor="let country of countries" (click)="changeLanguage(country)">
+        <img [src]="country.img" alt="flag">
+        <p> {{ country.title }} </p>
+      </button>
+    </mat-menu>
+  </nav>
 </section>
