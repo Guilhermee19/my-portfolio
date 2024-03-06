@@ -98,7 +98,7 @@
         width: 50px;
         height: 40px;
         font-size: 30px;
-        padding-top: 5px;
+        padding-top: 2px;
         margin:0 2px;
         -o-transition:all .4s;
         -webkit-transition: all .4s;
@@ -106,21 +106,21 @@
         transition: all .4s;
          -webkit-font-smoothing: antialiased;
 
-        &:nth-of-type(1):before {
-          content:'\f113';
-        }
-        &:nth-of-type(2):before {
-        content:'\f1cb';
-        }
-        &:nth-of-type(3):before {
-          content:'\f08c';
-        }
-        &:nth-of-type(4):before {
-          content:'\f0e0';
-        }
-        &:nth-of-type(5):before {
-          content:'\f0e0';
-        }
+        // &:nth-of-type(1):before {
+        //   content:'\f113';
+        // }
+        // &:nth-of-type(2):before {
+        // content:'\f1cb';
+        // }
+        // &:nth-of-type(3):before {
+        //   content:'\f08c';
+        // }
+        // &:nth-of-type(4):before {
+        //   content:'\f0e0';
+        // }
+        // &:nth-of-type(5):before {
+        //   content:'\f0e0';
+        // }
 
         &:hover {
           background: var(--blue);
