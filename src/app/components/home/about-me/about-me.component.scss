@@ -5,6 +5,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   .swiper {
     width: 35%;
@@ -23,7 +24,7 @@
   }
 
   .swiper-slide {
-    width: 100%;
+    width: 100% !important;
     text-align: center;
     font-size: 18px;
     background: transparent;
@@ -195,25 +196,9 @@
   }
 
   @media screen and (max-width: 940px) {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5%;
-
-    .swiper{
-      order: 2;
-      width: 100%;
-      max-width: 430px;
-    }
-
-    #description {
-      max-width: max-content;
-    }
-
-    h5{
-      order: 3;
-      width: 100%;
-      max-width: 315px;
-    }
+    // flex-wrap: wrap;
+    // justify-content: center;
+    gap: 1rem;
 
     figure{
       order: 1;
@@ -223,6 +208,32 @@
       img{
         width: 40vw;
       }
+    }
+
+    .swiper{
+      order: 2;
+      width: 100%;
+      max-width: 430px;
+
+      h3{
+        font-size: 32px !important;
+      }
+
+      .swiper-pagination-vertical.swiper-pagination-bullets {
+        left: 25px !important;
+      }
+
+      #description {
+        max-width: max-content;
+        padding-right: 1rem;
+        padding-left: 50px;
+      }
+    }
+
+    .json-info{
+      order: 3;
+      width: 100%;
+      max-width: 315px;
     }
   }
 }
