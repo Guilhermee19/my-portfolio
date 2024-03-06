@@ -66,13 +66,16 @@ $max-font-size: 52;
 }
 
 .fd-125 {  //  22 -> 125
-  font-size: calc(9.598214285714286vw + -8.714285714285714px) !important;
+  font-size: calc(7.366071428571429vw + -1.5714285714285714px) !important;
 
   @media (min-width: 768px) {
-    font-size: calc(10.135135135135135vw + -12.837837837837839px) !important;
+    font-size: calc(7.601351351351352vw + -3.3783783783783785px) !important;
   }
   @media (min-width: 1360px) {
-    font-size: 125px !important;
+    font-size: calc(0vw + 100px) !important;
+  }
+  @media (min-width: 1920px) {
+    font-size: 100px !important;
   }
 }
 
