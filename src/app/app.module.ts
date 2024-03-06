@@ -22,11 +22,9 @@ import { IconDirective } from './directives/icon.directive';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
-import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 
-import { NgxMaskModule } from 'ngx-mask';
 import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
@@ -49,10 +47,8 @@ import { SwiperModule } from 'swiper/angular';
     SwiperModule,
     MatMenuModule,
     BrowserAnimationsModule,
-    DragDropModule,
     MatInputModule,
     FormsModule,
-    NgxMaskModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
