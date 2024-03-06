@@ -27,7 +27,7 @@ export class SkillsComponent implements OnInit {
     },
     {
       name: 'Angular',
-      img: '/assets/icons/webp/Angular-logo.webp'
+      img: '/assets/icons/webp/angular-logo.webp'
     },
     {
       name: 'Git',
