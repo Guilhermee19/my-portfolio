@@ -11,51 +11,51 @@ export class SkillsComponent implements OnInit {
   skills = [
     {
       name: 'Html5',
-      img: '/assets/icons/Html5 logo.png'
+      img: '/assets/icons/webp/Html5 logo.webp'
     },
     {
       name: 'Css',
-      img: '/assets/icons/Css logo.png'
+      img: '/assets/icons/webp/Css logo.webp'
     },
     {
       name: 'Javascript',
-      img: '/assets/icons/Javascript logo.png'
+      img: '/assets/icons/webp/Javascript logo.webp'
     },
     {
       name: 'Typescript',
-      img: '/assets/icons/Typescript logo.png'
+      img: '/assets/icons/webp/Typescript logo.webp'
     },
     {
       name: 'Angular',
-      img: '/assets/icons/Angular logo.png'
+      img: '/assets/icons/webp/Angular logo.webp'
     },
     {
       name: 'Git',
-      img: '/assets/icons/Git logo.png'
+      img: '/assets/icons/webp/Git logo.webp'
     },
     {
       name: 'Python',
-      img: '/assets/icons/Python.png'
+      img: '/assets/icons/webp/Python.webp'
     },
     {
       name: 'Vercel',
-      img: '/assets/icons/Vercel.png'
+      img: '/assets/icons/webp/Vercel.webp'
     },
     {
       name: 'React',
-      img: '/assets/icons/React log.png'
+      img: '/assets/icons/webp/React log.webp'
     },
     {
       name: 'Sass',
-      img: '/assets/icons/Sass.png'
+      img: '/assets/icons/webp/Sass.webp'
     },
     {
       name: 'Django',
-      img: '/assets/icons/Django logo.png'
+      img: '/assets/icons/webp/Django logo.webp'
     },
     {
       name: 'Netlify',
-      img: '/assets/icons/netlify.png'
+      img: '/assets/icons/webp/netlify.webp'
     },
   ]
 
