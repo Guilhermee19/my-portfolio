@@ -14,7 +14,7 @@ main {
   background-color: var(--blue-dark);
   overflow: hidden;
 
-  .circle{
+  .circle-effect{
     position: absolute;
     top: -2000px;
     left: -3000px;
@@ -23,7 +23,6 @@ main {
     border-radius: 50%;
     background-color: var(--background-effect);
     filter: blur(85vw);
-    // opacity: .3;
   }
 
   section {
