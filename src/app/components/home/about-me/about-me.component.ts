@@ -26,8 +26,12 @@ export class AboutMeComponent {
       description: 'text_about_me_3'
     },
     {
-      year: 2023,
+      year: 2021,
       description: 'text_about_me_4'
+    },
+    {
+      year: new Date().getFullYear(),
+      description: 'text_about_me_5'
     },
   ]
 
