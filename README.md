@@ -1,4 +1,4 @@
-# Portifolio - I am Gui 
+# Portfolio - I am Gui 
 
 Projeto gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 14.1.2.
 
