@@ -1,6 +1,8 @@
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 @Component({
   selector: 'app-skills',
+  standalone: true,
+  imports: [],
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss']
 })

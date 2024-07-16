@@ -1,10 +1,14 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
+import { SwiperModule } from 'swiper/angular';
 SwiperCore.use([EffectCoverflow, Pagination]);
 
 @Component({
   selector: 'app-about-me',
+  standalone: true,
+  imports: [SwiperModule, TranslateModule],
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.scss'],
   encapsulation: ViewEncapsulation.None

@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-game-boy',
+  standalone: true,
+  imports: [],
   templateUrl: './game-boy.component.html',
   styleUrls: ['./game-boy.component.scss']
 })

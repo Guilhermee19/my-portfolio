@@ -1,8 +1,16 @@
-import { Component, OnInit, HostListener, ElementRef, ViewEncapsulation } from '@angular/core';
+import { VerticalScrollComponent } from './../../components/vertical-scroll/vertical-scroll.component';
+import { Component, OnInit, HostListener, ElementRef, ViewEncapsulation, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { AboutMeComponent } from 'src/app/components/home/about-me/about-me.component';
+import { CarouselProjectsComponent } from 'src/app/components/home/carousel-projects/carousel-projects.component';
+import { SkillsComponent } from 'src/app/components/home/skills/skills.component';
+import { LoadingPageComponent } from 'src/app/components/loading-page/loading-page.component';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
+  imports: [AboutMeComponent, SkillsComponent, CarouselProjectsComponent, VerticalScrollComponent, LoadingPageComponent, TranslateModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   encapsulation: ViewEncapsulation.None
@@ -19,10 +27,10 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  constructor(
-    private el: ElementRef,
-    private router: Router
-  ) { }
+  private translate = inject(TranslateService);
+  private el = inject(ElementRef);
+  private router = inject(Router);
+
 
   year= new Date().getFullYear();
   loading = true
