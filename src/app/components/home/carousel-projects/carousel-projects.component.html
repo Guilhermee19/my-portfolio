@@ -11,6 +11,7 @@
     slideShadows: true
   }"
   [loop]="true"
+  [autoplay]="{ delay: 3000, disableOnInteraction: false }"
   [pagination]="{ clickable: true }"
   class="mySwiper"
 >
@@ -21,9 +22,11 @@
     <div class="detail">
       <div class="text">
         <strong class="f-28">{{ project.name }}</strong>
-        <p>{{ project.technology }} - {{ project.hosted }}</p>
       </div>
+
       <div class="link">
+        <p>{{ project.technology }} - {{ project.hosted }}</p>
+
         <a aria-label="link projeto" [href]="project.link" target="_blank">  {{ "access" | translate }} </a>
         <a aria-label="link do codigo no Github" [href]="project.link_project" target="_blank">
           <i icon="icon_github" class="icon_color"></i>
