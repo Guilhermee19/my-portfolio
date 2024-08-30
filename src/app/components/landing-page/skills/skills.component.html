@@ -1,0 +1,39 @@
+<section class="skills">
+  <header data-aos="fade-up">
+    <h3> <strong class="f-32">03.</strong>  {{ "skills" | translate }}</h3>
+  </header>
+
+  <div class="list-skills">
+    <div class="brands-list">
+      <div class="wrapper">
+        @for (skill of carousel.slider1; track $index) {
+          <figure>
+            <img [src]="skill.img" height="100" width="250" alt="" />
+          </figure>
+        }
+      </div>
+    </div>
+
+    <div class="brands-list">
+      <div class="wrapper reverse">
+        @for (skill of carousel.slider2; track $index) {
+          <figure>
+            <img [src]="skill.img" height="100" width="250" alt="" />
+          </figure>
+        }
+      </div>
+    </div>
+
+
+    <div class="brands-list">
+      <div class="wrapper">
+        @for (skill of carousel.slider3; track $index) {
+          <figure>
+            <img [src]="skill.img" height="100" width="250" alt="" />
+          </figure>
+        }
+      </div>
+    </div>
+  </div>
+
+</section>
