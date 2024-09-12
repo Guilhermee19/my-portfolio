@@ -1,0 +1,20 @@
+<section id="navbar">
+  <strong class="f-28" routerLink="/">
+    <span>< Iam</span>Gui.dev />
+  </strong>
+
+  <nav>
+    <figure class="f-20" [matMenuTriggerFor]="menu">
+      <img [src]="selected_country.img" alt="flag">
+    </figure>
+
+    <mat-menu #menu="matMenu" [style]="'position: absolute'">
+      @for (country of countries; track $index) {
+        <button mat-menu-item (click)="changeLanguage(country)">
+          <img [src]="country.img" alt="flag">
+          <!-- <p> {{ country.title }} </p> -->
+        </button>
+      }
+    </mat-menu>
+  </nav>
+</section>
