@@ -12,8 +12,8 @@
   "text_about_me_1":"O primeiro contato com programação foi com HTML e CSS basico, mesmo nem sabendo exatamente o que estava fazendo, só que tinha adorado criar um site meu.",
   "text_about_me_2":"Iniciei a faculdade Ciência da Computação na UNIFESO, onde realmente conheci a programação, a logica e as boas praticas para desenvolver um site.",
   "text_about_me_3":"A faculdade me abriu portas e me deu a oportunidade de ingressar no mercado de trabalho na área da programação, onde comecei como estagiário na empresa Noclaf.",
-  "text_about_me_4":"Apresentei meu TCC com um site de realidade aumentada usando Three.js para modelos 3D. Me formei na faculdade e foquei em estudar Angular, animação e elementos 3D para web.",
-  "text_about_me_5":"E hoje sou programador Desenvolvedor Front End, com mais de 3 anos de experiencia em Angular, ja trabalhei com React.js, Scss, Vue, AWS e muitas outras tecnologias.",
+  "text_about_me_4":"Me formei na faculdade e apresentei meu TCC, no qual desenvolvi um site de realidade aumentada utilizando Three.js para exibir modelos 3D.",
+  "text_about_me_5":"Tenho mais de 4 anos de experiência em Angular e já trabalhei com diversas tecnologias. Recentemente, iniciei meus estudos em Django para expandir meus conhecimentos em Back End.",
   "access":"Acessar",
   "project": {
     "virtual_tour": "Tour Virtual",
