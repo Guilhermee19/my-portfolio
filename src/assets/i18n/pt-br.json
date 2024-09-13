@@ -4,6 +4,10 @@
   "projects": "Projetos",
   "skills": "Habilidades",
   "contact": "Contato",
+  "name": "Nome",
+  "email": "E-mail",
+  "message": "Mensagem",
+  "send": "Enviar",
   "terminal":{
     "hello_i_am": "Olá, eu sou",
     "i_am":"sou",

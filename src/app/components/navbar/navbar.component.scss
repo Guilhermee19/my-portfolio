@@ -23,43 +23,55 @@ section{
       animation-name: scroll-up;
     }
 
-    strong{
-      color: var(--white);
-      font-weight: 900;
-      cursor: pointer;
-      text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.35);
-      text-decoration: none;
-
-      span{
-        color: var(--blue);
-        font-weight: 900;
-      }
-    }
-
-    nav{
-      position: absolute;
-      right: 5%;
+    .container{
+      position: relative;
+      width: 90%;
+      max-width: var(--w-max);
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 0 25px;
+      flex-direction: column;
+      flex-direction: center;
+      justify-content: center;
+      margin: 0 auto;
 
-      figure{
-        font-weight: bold;
-        text-decoration: none;
-        cursor: pointer;
+      strong{
         color: var(--white);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-weight: 900;
+        cursor: pointer;
+        text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.35);
+        text-decoration: none;
 
-        img{
-          width: 25px;
-          aspect-ratio: 1/1;
-          object-fit: contain;
+        span{
+          color: var(--blue);
+          font-weight: 900;
+        }
+      }
+
+      nav{
+        position: absolute;
+        right: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0 25px;
+
+        figure{
+          font-weight: bold;
+          text-decoration: none;
+          cursor: pointer;
+          color: var(--white);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img{
+            width: 25px;
+            aspect-ratio: 1/1;
+            object-fit: contain;
+          }
         }
       }
     }
+
 }
 
 ::ng-deep{

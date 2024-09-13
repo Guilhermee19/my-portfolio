@@ -3,19 +3,19 @@ main {
   position: relative;
   width: 100%;
   height: max-content;
-  min-height: 100vh;
+  min-height: 100dvh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex-direction: center;
   justify-content: center;
   overflow: hidden;
-  background: rgb(11,47,124);
-  background: linear-gradient(127deg, rgba(11,47,124,1) 0%, rgba(12,28,63,1) 100%);
+  // background: rgb(11,47,124);
+  // background: linear-gradient(127deg, rgba(11,47,124,1) 0%, rgba(12,28,63,1) 100%);
 
   .container{
     width: 90%;
-    max-width: 1440px;
+    max-width: var(--w-max);
     display: flex;
     flex-direction: column;
     flex-direction: center;

@@ -29,7 +29,7 @@ section.skills {
   .list-skills{
     $animationSpeed: 60s;
     $qtdSkills: 12;
-
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
