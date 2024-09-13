@@ -30,6 +30,7 @@
     transform-origin: center;
     transform: rotateY(0deg);
     animation: block-animation 5s linear infinite;
+    cursor: pointer;
 
     &__shadow{
         width: calc(20em/2);

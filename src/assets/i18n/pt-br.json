@@ -14,5 +14,15 @@
   "text_about_me_3":"A faculdade me abriu portas e me deu a oportunidade de ingressar no mercado de trabalho na área da programação, onde comecei como estagiário na empresa Noclaf.",
   "text_about_me_4":"Apresentei meu TCC com um site de realidade aumentada usando Three.js para modelos 3D. Me formei na faculdade e foquei em estudar Angular, animação e elementos 3D para web.",
   "text_about_me_5":"E hoje sou programador Desenvolvedor Front End, com mais de 3 anos de experiencia em Angular, ja trabalhei com React.js, Scss, Vue, AWS e muitas outras tecnologias.",
-  "access":"Acessar"
+  "access":"Acessar",
+  "project": {
+    "virtual_tour": "Tour Virtual",
+    "marvel_movies_and_series": "Filmes e Series Marvel",
+    "advice_generator": "Gerador de Conselhos",
+    "countdown_to_the_new_year": "Contagem Regressiva para o Ano Novo",
+    "personalized_linktree": "Linktree personalizado",
+    "pokedex": "PokeDex",
+    "ip_address_tracker": "Rastreador de endereço IP",
+    "dev_tools": "Ferramentas para Dev"
+  }
 }
