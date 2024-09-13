@@ -55,7 +55,7 @@ export class SkillsComponent {
     },
     {
       name: 'Django',
-      img: '/assets/icons/webp/django-logo.webp'
+      img: '/assets/icons/webp/Django-logo.webp'
     },
     {
       name: 'Netlify',

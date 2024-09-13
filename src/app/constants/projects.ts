@@ -1,7 +1,7 @@
 export const PROJECTS = [
   {
     name: "project.virtual_tour",
-    image: "assets/pages/tcctourvirtual.vercel.app_home(Full HD).png",
+    image: "assets/pages/webp/tcctourvirtual.vercel.app_home(Full HD).webp",
     technology: "Angular",
     hosted: "Vercel",
     link: 'https://tcctourvirtual.vercel.app/home',
@@ -9,7 +9,7 @@ export const PROJECTS = [
   },
   {
     name: "project.marvel_movies_and_series",
-    image: "assets/pages/react-movie-web-zeta.vercel.app_(Full HD).png",
+    image: "assets/pages/webp/react-movie-web-zeta.vercel.app_(Full HD).webp",
     technology: "React",
     hosted: "Vercel",
     link: 'https://react-movie-web-zeta.vercel.app//',
@@ -17,7 +17,7 @@ export const PROJECTS = [
   },
   {
     name: "project.advice_generator",
-    image: "assets/pages/advice-generator-web.vercel.app_(Full HD).png",
+    image: "assets/pages/webp/advice-generator-web.vercel.app_(Full HD).webp",
     technology: "React",
     hosted: "Vercel",
     link: 'https://advice-generator-web.vercel.app/',
@@ -25,7 +25,7 @@ export const PROJECTS = [
   },
   {
     name: "project.countdown_to_the_new_year",
-    image: "assets/pages/countdown-timer-rosy.vercel.app_(Full HD).png",
+    image: "assets/pages/webp/countdown-timer-rosy.vercel.app_(Full HD).webp",
     technology: "HTML, CSS e JS",
     hosted: "Vercel",
     link: 'https://countdown-timer-rosy.vercel.app/',
@@ -33,7 +33,7 @@ export const PROJECTS = [
   },
   {
     name: "project.personalized_linktree",
-    image: "assets/pages/los-mundissas.vercel.app_(Full HD).png",
+    image: "assets/pages/webp/los-mundissas.vercel.app_(Full HD).webp",
     technology: "Angular",
     hosted: "Vercel",
     link: 'https://los-mundissas.vercel.app/',
@@ -41,7 +41,7 @@ export const PROJECTS = [
   },
   {
     name: "project.pokedex",
-    image: "assets/pages/pokedex-web-mocha.vercel.app_(Full HD).png",
+    image: "assets/pages/webp/pokedex-web-mocha.vercel.app_(Full HD).webp",
     technology: "Angular",
     hosted: "Vercel",
     link: 'https://pokedex-web-mocha.vercel.app/',
@@ -49,7 +49,7 @@ export const PROJECTS = [
   },
   {
     name: "project.ip_address_tracker",
-    image: "assets/pages/my-ip-address-tracker.vercel.app_home(Full HD).png",
+    image: "assets/pages/webp/my-ip-address-tracker.vercel.app_home(Full HD).webp",
     technology: "Angular",
     hosted: "Vercel",
     link: 'https://my-ip-address-tracker.vercel.app/',
@@ -57,7 +57,7 @@ export const PROJECTS = [
   },
   {
     name: "project.dev_tools",
-    image: "assets/pages/assets.iamgui.dev_color-picker(Full HD).png",
+    image: "assets/pages/webp/assets.iamgui.dev_color-picker(Full HD).webp",
     technology: "Angular/Tauri",
     hosted: "Netlify",
     link: 'https://assets.iamgui.dev/text-convert',

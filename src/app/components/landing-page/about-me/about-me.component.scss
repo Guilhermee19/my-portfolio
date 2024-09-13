@@ -1,5 +1,6 @@
 @import "swiper/scss";
 @import "swiper/scss/pagination";
+@import "../../../../styles/media";
 
 section.about {
   position: relative;
@@ -12,6 +13,11 @@ section.about {
   flex-direction: center;
   justify-content: center;
   overflow: hidden;
+
+  @include media(">=2000px") {
+    min-height: 100%;
+    max-height: var(--h-max);
+  }
 
   header{
     margin-bottom: 1rem;

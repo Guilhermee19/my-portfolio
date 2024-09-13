@@ -1,6 +1,4 @@
-// @import "swiper/scss";
-// @import "swiper/scss/pagination";
-
+@import "../../../styles/media";
 main {
   position: relative;
   width: 100%;
@@ -15,8 +13,14 @@ main {
   background: rgb(11,47,124);
   background: linear-gradient(127deg, rgba(11,47,124,1) 0%, rgba(12,28,63,1) 100%);
 
-  app-page-loading{
-    height: 400px;
+  .container{
+    width: 90%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   footer{
