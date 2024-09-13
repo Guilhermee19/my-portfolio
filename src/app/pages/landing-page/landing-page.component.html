@@ -1,17 +1,12 @@
 <main>
-  <!-- @if(loading){
-    <app-page-loading></app-page-loading>
-  }
-  @else { -->
-    <div class="circle-effect"></div>
-    <app-initial-presentation></app-initial-presentation>
-    <app-about-me></app-about-me>
-    <app-carousel-projects></app-carousel-projects>
-    <app-skills></app-skills>
+    <app-initial-presentation />
+    <app-about-me />
+    <app-carousel-projects />
+    <app-skills />
+
+    <!-- <app-page-loading /> -->
 
     <footer>
-      <p>© Copyright {{ year }} - Guilherme Santana</p>
+      <p><span routerLink="/easter-egg">©</span> Copyright 2022-{{ year }} < IamGui.dev /></p>
     </footer>
-<!-- } -->
-
 </main>

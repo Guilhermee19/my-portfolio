@@ -12,120 +12,11 @@ main {
   flex-direction: center;
   justify-content: center;
   overflow: hidden;
+  background: rgb(11,47,124);
+  background: linear-gradient(127deg, rgba(11,47,124,1) 0%, rgba(12,28,63,1) 100%);
 
-  .circle-effect{
-    position: absolute;
-    top: -2000px;
-    left: -3000px;
-    width: 4500px;
-    height: 4500px;
-    border-radius: 50%;
-    background-color: var(--background-effect);
-    filter: blur(85vw);
-  }
-
-  section {
-    header{
-      margin-bottom: 1rem;
-      h3{
-        color: var(--blue);
-        line-height: 1;
-
-        strong{
-          color: var(--white);
-          line-height: 1;
-        }
-      }
-    }
-
-    &.start{
-      height: 100vh;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-
-      img{
-        width: 82px;
-        align-self: 1/1;
-        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-      }
-
-      .title_name{
-        width: max-content;
-
-        h2{
-          font-size: 44px;
-          color: var(--white);
-          text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
-          margin: 0;
-
-          span{
-            color: var(--blue);
-          }
-
-          &:first-child{
-            padding-left: 3px;
-          }
-
-          &:last-child{
-            text-align: right;
-          }
-        }
-
-        h1{
-          font-size: 120px;
-          color: var(--white);
-          line-height: 1;
-          text-align: left;
-          margin: 0;
-          text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
-
-          span{
-            color: var(--blue);
-          }
-        }
-      }
-    }
-
-    &.about {
-      width: 100%;
-      height: max-content;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-
-    }
-
-    &.projects {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
-
-    &.skills {
-      width: 100%;
-      min-height: 75vh;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    &.contact {
-      width: 100%;
-      min-height: 75vh;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
+  app-page-loading{
+    height: 400px;
   }
 
   footer{
@@ -136,6 +27,10 @@ main {
     p{
       color: var(--white);
       text-align: center;
+
+      span{
+        cursor: pointer;
+      }
     }
   }
 }
