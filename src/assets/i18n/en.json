@@ -14,5 +14,15 @@
   "text_about_me_3": "The college provided me with opportunities and paved the way for me to enter the programming field, where I started as an intern at Noclaf.",
   "text_about_me_4": "I presented my thesis with an augmented reality website using Three.js for 3D models. I graduated from college and focused on studying Angular, animation, and 3D elements for the web.",
   "text_about_me_5": "And today, I am a Front End Developer with over 3 years of experience in Angular. I have also worked with React.js, Scss, Vue, AWS, and many other technologies.",
-  "access":"Access"
+  "access":"Access",
+  "project": {
+    "virtual_tour": "Virtual Tour",
+    "marvel_movies_and_series": "Marvel Movies and Series",
+    "advice_generator": "Advice Generator",
+    "countdown_to_the_new_year": "Countdown to the New Year",
+    "personalized_linktree": "Personalized linktree",
+    "pokedex": "PokeDex",
+    "ip_address_tracker": "IP address tracker",
+    "dev_tools": "Dev tools"
+  }
 }
