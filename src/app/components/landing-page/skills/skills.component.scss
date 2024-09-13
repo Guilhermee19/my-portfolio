@@ -1,7 +1,14 @@
+@import "../../../../styles/media";
+
 section.skills {
   position: relative;
   width: 100%;
   min-height: 75vh;
+
+  @include media(">=2000px") {
+    min-height: 100%;
+    max-height: var(--h-max);
+  }
 
   header{
     width: 90%;
@@ -35,7 +42,7 @@ section.skills {
       .wrapper{
         height: 100%;
         // background: rgba(0, 0, 0, 0.2);
-        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+        // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
         padding: .5rem 0;
 
         display: grid;
