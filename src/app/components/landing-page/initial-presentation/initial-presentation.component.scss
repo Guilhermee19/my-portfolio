@@ -2,7 +2,7 @@
 
 section.start {
   position: relative;
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -50,6 +50,16 @@ section.start {
 
       span{
         color: var(--blue);
+      }
+    }
+
+    @include media("<=720px") {
+      h2{
+        font-size: 20px !important;
+      }
+
+      h1{
+        font-size: 33px !important;
       }
     }
   }

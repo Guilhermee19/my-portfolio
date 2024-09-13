@@ -1,8 +1,12 @@
+::ng-deep{
+  app-vertical-scroll{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
 
 #scroll-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
   display: table;
   height: 100%;
   z-index: 9;

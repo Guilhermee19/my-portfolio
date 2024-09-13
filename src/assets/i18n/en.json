@@ -4,6 +4,10 @@
   "projects": "Projects",
   "skills": "Skills",
   "contact": "Contact",
+  "name": "Name",
+  "email": "Email",
+  "message": "Message",
+  "send": "Send",
   "terminal":{
     "hello_i_am": "Hello, I am",
     "i_am":"I'm a",

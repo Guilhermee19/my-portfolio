@@ -1,0 +1,28 @@
+
+.mat-mdc-button-base {
+  text-decoration: none;
+
+  &.mdc-button,
+  &.mat-raised-button {
+    height: 45px;
+    padding: 10px 25px;
+    border-radius: 12px;
+
+    .mdc-button__label{
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+
+    &.primary {
+      background-color: var(--blue);
+      color: #fff;
+    }
+
+    &.secundary {
+      background-color: #fff;
+      border: 2px solid var(--blue);
+      color: var(--blue);
+    }
+  }
+}
