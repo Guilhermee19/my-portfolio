@@ -1,0 +1,9 @@
+[build]
+  command = "ng build"
+  functions = "netlify/functions"
+  publish = "dist/my-portfolio/browser"
+
+  [[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
