@@ -1,6 +1,14 @@
 $base-font-size: 19;
 $min-font-size: 10;
-$max-font-size: 52;
+$max-font-size: 92;
+
+@for $i from $min-font-size through $max-font-size {
+  $class-name: '.f-#{$i}';
+
+  #{$class-name} {
+    font-size: calc($i / $base-font-size * 1rem) !important;
+  }
+}
 
 .one-line {
   text-overflow: ellipsis;
@@ -65,26 +73,26 @@ $max-font-size: 52;
   }
 }
 
-.fd-125 {  //  22 -> 125
-  font-size: calc(7.366071428571429vw + -1.5714285714285714px) !important;
+.fd-90 {  //  22 -> 90
+  font-size: calc(2.9017857142857144vw + 12.714285714285714px);
 
   @media (min-width: 768px) {
-    font-size: calc(7.601351351351352vw + -3.3783783783783785px) !important;
+    font-size: calc(4.222972972972973vw + 2.5675675675675675px);
   }
   @media (min-width: 1360px) {
-    font-size: calc(0vw + 100px) !important;
+    font-size: calc(5.357142857142857vw + -12.857142857142858px);
   }
   @media (min-width: 1920px) {
-    font-size: 100px !important;
+    font-size: 90px;
   }
 }
 
 h1{
-   @extend .fd-125;
+   @extend .fd-90;
 }
 
 h2{
-   @extend .fd-40;
+   @extend .fd-35;
 }
 
 h3{
@@ -95,10 +103,3 @@ h4{
    @extend .fd-30
 }
 
-@for $i from $min-font-size through $max-font-size {
-  $class-name: '.f-#{$i}';
-
-  #{$class-name} {
-    font-size: calc($i / $base-font-size * 1rem) !important;
-  }
-}
