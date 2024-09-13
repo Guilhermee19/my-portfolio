@@ -1,6 +1,6 @@
-<section class="skills">
+<section class="contact">
   <header data-aos="fade-up">
-    <h3> <strong class="f-32">04.</strong>  {{ "contact" | translate }}</h3>
+    <h3> <strong class="f-32">04.</strong>  {{ "contact" | translate }} </h3>
   </header>
 
   <div class="mensege">
@@ -18,17 +18,18 @@
             <li></li>
             <li></li>
             <li></li>
+            <li></li>
           </ul>
 
           <div class="code-wrapper">
             <div class="ng-scroll-content">
               <pre>
                 <code>
-                  <p class="line"> <span class="pen-letter">Nome:</span> {{ contact_form.value.name }}</p>
+                  <p class="line"> <span class="pen-letter">{{ "name" | translate }}:</span> {{ contact_form.value.name }}</p>
                   <p class="line"> </p>
-                  <p class="line"> <span class="pen-letter">Email:</span> {{ contact_form.value.email }} </p>
+                  <p class="line"> <span class="pen-letter">{{ "email" | translate }}:</span> {{ contact_form.value.email }} </p>
                   <p class="line"> </p>
-                  <p class="line"> <span class="pen-letter">Mensagem:</span> {{ contact_form.value.mensage }} </p>
+                  <p class="line"> <span class="pen-letter">{{ "message" | translate }}:</span> {{ contact_form.value.mensage }} </p>
                   <p class="line"> </p>
                 </code>
               </pre>
@@ -39,9 +40,9 @@
       </div>
     </div>
 
-    <form [formGroup]="contact_form">
+    <form [formGroup]="contact_form" name="contact" method="POST" data-netlify="true">
        <div class="card_input">
-        <label for="name"> Nome </label>
+        <label for="name">  {{ "name" | translate }} </label>
         <input
           id="name"
           type="text"
@@ -50,7 +51,7 @@
       </div>
 
       <div class="card_input">
-        <label for="email"> E-mail </label>
+        <label for="email"> {{ "email" | translate }} </label>
         <input
           id="email"
           type="email"
@@ -58,13 +59,12 @@
         />
       </div>
 
-      <!-- <div class="card_input">
-        <label for="mensage"> Mensagem </label>
-        <textarea
-          id="mensage"
-          formControlName="mensage"
-        > </textarea>
-      </div> -->
+      <div class="card_input">
+        <label for="mensage"> {{ "message" | translate }} </label>
+        <textarea name="mensage" id="mensage" formControlName="mensage"></textarea>
+      </div>
+
+      <button class="primary" mat-button type="submit"> {{ "send" | translate }} <i icon="send"></i> </button>
     </form>
 
   </div>
