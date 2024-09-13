@@ -1,6 +1,7 @@
 @import "swiper/scss";
 @import "swiper/scss/effect-coverflow";
 @import "swiper/scss/pagination";
+@import "../../../../styles/media";
 
 section.projects {
   position: relative;
@@ -8,6 +9,11 @@ section.projects {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  @include media(">=2000px") {
+    min-height: 100%;
+    max-height: var(--h-max);
+  }
 
   header{
     margin-bottom: 1rem;

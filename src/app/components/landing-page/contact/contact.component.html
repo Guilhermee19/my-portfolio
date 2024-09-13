@@ -1,0 +1,71 @@
+<section class="skills">
+  <header data-aos="fade-up">
+    <h3> <strong class="f-32">04.</strong>  {{ "contact" | translate }}</h3>
+  </header>
+
+  <div class="mensege">
+    <div class="notebook-sheet">
+      <div class="sample">
+        <div class="editor">
+          <ul class="numbers">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+
+          <div class="code-wrapper">
+            <div class="ng-scroll-content">
+              <pre>
+                <code>
+                  <p class="line"> <span class="pen-letter">Nome:</span> {{ contact_form.value.name }}</p>
+                  <p class="line"> </p>
+                  <p class="line"> <span class="pen-letter">Email:</span> {{ contact_form.value.email }} </p>
+                  <p class="line"> </p>
+                  <p class="line"> <span class="pen-letter">Mensagem:</span> {{ contact_form.value.mensage }} </p>
+                  <p class="line"> </p>
+                </code>
+              </pre>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <form [formGroup]="contact_form">
+       <div class="card_input">
+        <label for="name"> Nome </label>
+        <input
+          id="name"
+          type="text"
+          formControlName="name"
+        />
+      </div>
+
+      <div class="card_input">
+        <label for="email"> E-mail </label>
+        <input
+          id="email"
+          type="email"
+          formControlName="email"
+        />
+      </div>
+
+      <!-- <div class="card_input">
+        <label for="mensage"> Mensagem </label>
+        <textarea
+          id="mensage"
+          formControlName="mensage"
+        > </textarea>
+      </div> -->
+    </form>
+
+  </div>
+</section>

@@ -7,6 +7,7 @@ import { CarouselProjectsComponent } from '../../components/landing-page/carouse
 import { SkillsComponent } from '../../components/landing-page/skills/skills.component';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ContactComponent } from '../../components/landing-page/contact/contact.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -19,6 +20,7 @@ import { RouterModule } from '@angular/router';
     AboutMeComponent,
     CarouselProjectsComponent,
     SkillsComponent,
+    ContactComponent,
     RouterModule
   ],
   templateUrl: './landing-page.component.html',
