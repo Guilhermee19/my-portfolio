@@ -1,0 +1,12 @@
+[build]
+  command = "ng build"
+  functions = "netlify/functions"
+  publish = "dist/my-portfolio/browser"
+
+[build.environment]
+  NODE_VERSION = "18.13.0"
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
