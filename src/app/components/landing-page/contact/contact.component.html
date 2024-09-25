@@ -40,8 +40,12 @@
       </div>
     </div>
 
-    <form [formGroup]="contact_form" name="contact" method="POST" data-netlify="true">
-       <div class="card_input">
+    <form
+      [formGroup]="contact_form"
+      (ngSubmit)="onSubmit($event)"
+      name="contact" method="POST" data-netlify="true"
+    >
+      <div class="card_input">
         <label for="name">  {{ "name" | translate }} </label>
         <input
           id="name"

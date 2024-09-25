@@ -28,5 +28,7 @@
     "pokedex": "PokeDex",
     "ip_address_tracker": "Rastreador de endereço IP",
     "dev_tools": "Ferramentas para Dev"
-  }
+  },
+  "contact_success": "Carta enviada! Agora é só aguardar a resposta.",
+  "contact_error": "Ops, parece que algo deu errado no envio. Tente novamente!"
 }

@@ -28,5 +28,7 @@
     "pokedex": "PokeDex",
     "ip_address_tracker": "IP address tracker",
     "dev_tools": "Dev tools"
-  }
+  },
+  "contact_success": "Letter sent! Now just wait for the reply.",
+  "contact_error": "Oops, looks like something went wrong with the shipment. Try again!"
 }
