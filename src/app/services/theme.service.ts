@@ -57,6 +57,8 @@ export class ThemeService {
       this.cookieService.set('theme', theme);
       const html = document.querySelector('html');
 
+      if(!html) return;
+
       if (theme === 'light') {
         html?.classList.remove('dark');
       } else {
