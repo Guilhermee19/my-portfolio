@@ -25,11 +25,11 @@
             <div class="ng-scroll-content">
               <pre>
                 <code>
-                  <p class="line"> <span class="pen-letter">{{ "name" | translate }}:</span> {{ contact_form.value.name }}</p>
+                  <p class="line"> <span class="pen-letter">{{ "name" | translate }}:</span> {{ form.name }}</p>
                   <p class="line"> </p>
-                  <p class="line"> <span class="pen-letter">{{ "email" | translate }}:</span> {{ contact_form.value.email }} </p>
+                  <p class="line"> <span class="pen-letter">{{ "email" | translate }}:</span> {{ form.email }} </p>
                   <p class="line"> </p>
-                  <p class="line"> <span class="pen-letter">{{ "message" | translate }}:</span> {{ contact_form.value.message }} </p>
+                  <p class="line"> <span class="pen-letter">{{ "message" | translate }}:</span> {{ form.message }} </p>
                   <p class="line"> </p>
                 </code>
               </pre>
@@ -40,16 +40,23 @@
       </div>
     </div>
 
-    <form
+    <!-- <form
       [formGroup]="contact_form"
+      (submit)="onSubmit($event)"
+      name="contact" method="POST" data-netlify="true"
+      action="/#contact?success=true"
+    > -->
+    <form
+      (submit)="onSubmit($event)"
+      name="contact" method="POST" data-netlify="true"
+      action="/#contact?success=true"
     >
       <div class="card_input">
         <label for="name">  {{ "name" | translate }} </label>
         <input
           id="name"
           type="text"
-          name="name"
-          formControlName="name"
+          name="name" (keyup)="getInfo('name')"
         />
       </div>
 
@@ -58,14 +65,13 @@
         <input
           id="email"
           type="email"
-          name="email"
-          formControlName="email"
+          name="email" (keyup)="getInfo('email')"
         />
       </div>
 
       <div class="card_input">
         <label for="message"> {{ "message" | translate }} </label>
-        <textarea matInput name="message" id="mensage" title="message" name="message" formControlName="message"></textarea>
+        <textarea matInput name="message" (keyup)="getInfo('message')" id="message" title="message" name="message"></textarea>
       </div>
 
       <button class="primary" mat-button type="submit"> {{ "send" | translate }} <i icon="send"></i> </button>
