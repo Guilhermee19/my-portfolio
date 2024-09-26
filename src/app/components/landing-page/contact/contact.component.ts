@@ -34,37 +34,19 @@ export class ContactComponent {
   contact_form = this.fb.group({
     name: ['', Validators.required],
     email: ['', [Validators.required, Validators.email]],
-    mensage: ['', [Validators.required]],
+    message: ['', [Validators.required]],
   });
 
 
-  onSubmit(evt: SubmitEvent) {
-    evt.preventDefault();
-
+  onSubmit(e: Event) {
     if (this.loading) return;
 
     if (this.contact_form.invalid) {
       this.contact_form.markAllAsTouched();
+      e.preventDefault();
       return;
     }
 
     this.loading = true;
-
-    this.contactService.submitForm(this.contact_form.value).subscribe({
-      next: (data) => {
-        console.log(data);
-
-        this.toastr.success(this.translate.instant('contact_success'))
-        this.loading = false;
-
-        this.contact_form.reset();
-      },
-      error: (error) => {
-        console.log(error);
-
-        this.toastr.error(this.translate.instant('contact_error'))
-        this.loading = false;
-      }
-    })
   }
 }

@@ -29,7 +29,7 @@
                   <p class="line"> </p>
                   <p class="line"> <span class="pen-letter">{{ "email" | translate }}:</span> {{ contact_form.value.email }} </p>
                   <p class="line"> </p>
-                  <p class="line"> <span class="pen-letter">{{ "message" | translate }}:</span> {{ contact_form.value.mensage }} </p>
+                  <p class="line"> <span class="pen-letter">{{ "message" | translate }}:</span> {{ contact_form.value.message }} </p>
                   <p class="line"> </p>
                 </code>
               </pre>
@@ -42,14 +42,16 @@
 
     <form
       [formGroup]="contact_form"
-      (ngSubmit)="onSubmit($event)"
+      (submit)="onSubmit($event)"
       name="contact" method="POST" data-netlify="true"
+      action="/#contact?success=true"
     >
       <div class="card_input">
         <label for="name">  {{ "name" | translate }} </label>
         <input
           id="name"
           type="text"
+          name="name"
           formControlName="name"
         />
       </div>
@@ -59,13 +61,14 @@
         <input
           id="email"
           type="email"
+          name="email"
           formControlName="email"
         />
       </div>
 
       <div class="card_input">
-        <label for="mensage"> {{ "message" | translate }} </label>
-        <textarea name="mensage" id="mensage" formControlName="mensage"></textarea>
+        <label for="message"> {{ "message" | translate }} </label>
+        <textarea name="message" id="mensage" title="message"  name="message" [placeholder]="'message' | translate" formControlName="message"></textarea>
       </div>
 
       <button class="primary" mat-button type="submit"> {{ "send" | translate }} <i icon="send"></i> </button>
