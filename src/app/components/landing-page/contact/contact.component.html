@@ -29,8 +29,8 @@
                   <p class="line"> </p>
                   <p class="line"> <span class="pen-letter">{{ "email" | translate }}:</span> {{ contact_form.value.email }} </p>
                   <p class="line"> </p>
-                  <!-- <p class="line"> <span class="pen-letter">{{ "message" | translate }}:</span> {{ contact_form.value.message }} </p>
-                  <p class="line"> </p> -->
+                  <p class="line"> <span class="pen-letter">{{ "message" | translate }}:</span> {{ contact_form.value.message }} </p>
+                  <p class="line"> </p>
                 </code>
               </pre>
             </div>
@@ -42,9 +42,6 @@
 
     <form
       [formGroup]="contact_form"
-      (submit)="onSubmit($event)"
-      name="contact" method="POST" data-netlify="true"
-      action="/#contact?success=true"
     >
       <div class="card_input">
         <label for="name">  {{ "name" | translate }} </label>
@@ -71,7 +68,7 @@
         <textarea matInput name="message" id="mensage" title="message" name="message" formControlName="message"></textarea>
       </div>
 
-      <button class="primary" mat-button type="submit"> {{ "send" | translate }} <i icon="send"></i> </button>
+      <button class="primary" mat-button type="submit"> {{ "send" | translate }} <i icon="send"></i> </button>Alinhamento com o app do fluxo
     </form>
 
   </div>
