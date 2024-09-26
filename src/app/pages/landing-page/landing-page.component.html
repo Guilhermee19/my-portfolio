@@ -3,12 +3,16 @@
     <app-initial-presentation />
 
     <app-about-me />
-    <app-carousel-projects />
+    @defer () {
+      <app-carousel-projects />
+    }
     <app-skills />
     <app-contact />
   </div>
 
-  <footer>
-    <p><span routerLink="/easter-egg">©</span> Copyright 2022-{{ year }} < IamGui.dev /></p>
-  </footer>
+  @defer () {
+    <footer>
+      <p><span routerLink="/easter-egg">©</span> Copyright 2022-{{ year }} < IamGui.dev /></p>
+    </footer>
+  }
 </main>
