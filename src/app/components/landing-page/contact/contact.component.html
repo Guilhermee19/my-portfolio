@@ -66,10 +66,15 @@
         />
       </div>
 
-      <div class="card_input">
+      <mat-form-field class="card_input">
+        <mat-label>  {{ "message" | translate }}  </mat-label>
+        <textarea matInput name="message" id="mensage" title="message" name="message" formControlName="message"></textarea>
+      </mat-form-field>
+
+      <!-- <div class="card_input">
         <label for="message"> {{ "message" | translate }} </label>
-        <textarea name="message" id="mensage" title="message" name="message" [placeholder]="'message' | translate" formControlName="message"></textarea>
-      </div>
+        <textarea matInput name="message" id="mensage" title="message" name="message" formControlName="message"></textarea>
+      </div> -->
 
       <button class="primary" mat-button type="submit"> {{ "send" | translate }} <i icon="send"></i> </button>
     </form>
