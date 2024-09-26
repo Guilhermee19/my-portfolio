@@ -3,10 +3,8 @@ import { Component, inject } from '@angular/core';
 import { FormBuilder, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from '../../shared/shared.module';
-import { ContactService } from '../../../services/contact.service';
-import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contact',
@@ -25,9 +23,8 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ContactComponent {
   private fb = inject(FormBuilder);
-  private contactService = inject(ContactService);
-  private toastr = inject(ToastrService);
-  private translate = inject(TranslateService);
+  // private toastr = inject(ToastrService);
+  // private translate = inject(TranslateService);
 
   loading = false;
 

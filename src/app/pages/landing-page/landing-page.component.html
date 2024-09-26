@@ -2,21 +2,13 @@
   <div class="container">
     <app-initial-presentation />
 
-    @defer () {
-      <app-about-me />
-    }
-    @defer () {
-      <app-carousel-projects />
-    }
-    @defer () {
-      <app-skills />
-    }
+    <app-about-me />
+    <app-carousel-projects />
+    <app-skills />
     <app-contact />
   </div>
 
-  @defer () {
-    <footer>
-      <p><span routerLink="/easter-egg">©</span> Copyright 2022-{{ year }} < IamGui.dev /></p>
-    </footer>
-  }
+  <footer>
+    <p><span routerLink="/easter-egg">©</span> Copyright 2022-{{ year }} < IamGui.dev /></p>
+  </footer>
 </main>
