@@ -67,6 +67,8 @@ export class NavbarComponent implements OnInit {
       const navbar = document.getElementById('navbar');
       const scroll = (e.target as Document).documentElement.scrollTop;
 
+      if(!navbar || !scroll) return;
+
       if (navbar) {
         if (scroll > this.currentPosition) {
           navbar.classList.add("scroll_down");

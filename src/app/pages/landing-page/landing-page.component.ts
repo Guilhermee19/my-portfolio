@@ -32,6 +32,8 @@ export class LandingPageComponent {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     let divScroll: any = document.getElementById('scroll-wrapper');
+    if(!divScroll) return;
+
     if (window.pageYOffset > window.innerHeight / 9) {
       divScroll.style.opacity = '0';
     } else {
