@@ -60,7 +60,7 @@ export const PROJECTS = [
     image: "assets/pages/webp/assets.iamgui.dev_color-picker(Full HD).webp",
     technology: "Angular/Tauri",
     hosted: "Netlify",
-    link: 'https://assets.iamgui.dev/text-convert',
+    link: 'https://toolscenter.dev/',
     link_project: ""
   },
 ]
