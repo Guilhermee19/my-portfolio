@@ -34,9 +34,11 @@
             <p>{{ project.technology }} - {{ project.hosted }}</p>
 
             <a aria-label="link projeto" [href]="project.link" target="_blank">  {{ "access" | translate }} </a>
-            <a aria-label="link do codigo no Github" [href]="project.link_project" target="_blank">
-              <i icon="icon_github" class="icon_color"></i>
-            </a>
+            @if(project.link_project){
+              <a aria-label="link do codigo no Github" [href]="project.link_project" target="_blank">
+                <i icon="icon_github" class="icon_color"></i>
+              </a>
+            }
           </div>
         </div>
         <span class="shadow"></span>
