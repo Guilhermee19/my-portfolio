@@ -1,6 +1,6 @@
 <section class="contact">
   <header data-aos="fade-up">
-    <h3> <strong class="f-32">04.</strong>  {{ "contact" | translate }} </h3>
+    <h3><strong class="f-32">04.</strong> {{ "contact" | translate }}</h3>
   </header>
 
   <div class="mensege">
@@ -35,7 +35,6 @@
               </pre>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -47,17 +46,12 @@
       action="/#contact?success=true"
     > -->
     <form
-      (submit)="onSubmit($event)"
-      name="contact" method="POST"
-      action="/#contact?success=true"
+      action="https://formsubmit.co/m.sousa@lasforlife.com.br"
+      method="POST"
     >
       <div class="card_input">
-        <label for="name">  {{ "name" | translate }} </label>
-        <input
-          id="name"
-          type="text"
-          name="name" (keyup)="getInfo('name')"
-        />
+        <label for="name"> {{ "name" | translate }} </label>
+        <input id="name" type="text" name="name" (keyup)="getInfo('name')" />
       </div>
 
       <div class="card_input">
@@ -65,17 +59,26 @@
         <input
           id="email"
           type="email"
-          name="email" (keyup)="getInfo('email')"
+          name="email"
+          (keyup)="getInfo('email')"
         />
       </div>
 
       <div class="card_input">
         <label for="message"> {{ "message" | translate }} </label>
-        <textarea matInput name="message" (keyup)="getInfo('message')" id="message" title="message" name="message"></textarea>
+        <textarea
+          matInput
+          name="message"
+          (keyup)="getInfo('message')"
+          id="message"
+          title="message"
+          name="message"
+        ></textarea>
       </div>
 
-      <button class="primary" mat-button type="submit"> {{ "send" | translate }} <i icon="send"></i> </button>
+      <button class="primary" mat-button type="submit">
+        {{ "send" | translate }} <i icon="send"></i>
+      </button>
     </form>
-
   </div>
 </section>
